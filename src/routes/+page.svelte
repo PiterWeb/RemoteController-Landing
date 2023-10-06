@@ -5,6 +5,7 @@
 
 <svelte:head>
 	<title>Remote Controller 🕹 Play local co-op games online with your FRIENDS</title>
+	<meta name="description" content="Bring Back Afternoon Gaming Sessions">
 </svelte:head>
 
 <div class="flex flex-col md:w-full w-11/12 mt-12 md:flex-row">
