@@ -4,23 +4,28 @@
 </script>
 
 <svelte:head>
-	<title>Remote Controller 🕹 The tool you need to play with FRIENDS</title>
+	<title>Remote Controller 🕹 Play local co-op games online with your FRIENDS</title>
 </svelte:head>
 
-<div class="flex flex-col w-full mt-12 md:flex-row">
-	<section class="md:w-1/3 p-6">
+<div class="flex flex-col md:w-full w-11/12 mt-12 md:flex-row">
+	<section class="md:w-1/3 ml-12">
 		<h2 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
-			The tool you need to play with
-
+			Play
 			<span
 				class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
-				>FRIENDS</span
+				>LOCAL</span
+			>
+
+			co-op games
+			<span
+				class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+				>ONLINE</span
 			>
 		</h2>
-		<h3 class="text-2xl font-bold my-4">Start to share and play without limits.</h3>
+		<h3 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h3>
 
 		<div class="flex flex-col space-y-4">
-			<a href="/info" class="btn btn-lg">{@html InfoSVG} Info</a>
+			<a href="/info" class="btn btn-lg">{@html InfoSVG} Learn more</a>
 
 			<button
 				on:click={() => {
@@ -28,14 +33,24 @@
 					// @ts-ignore
 					dialog?.showModal();
 				}}
-				class="btn btn-primary btn-lg">{@html DownloadSVG} FREE Download</button
+				class="btn btn-primary btn-lg">{@html DownloadSVG} Start Playing</button
 			>
+		</div>
+
+		<div class="mt-24">
+			<h3 class="text-4xl font-black leading-[1.1]">Bring Back Afternoon Gaming Sessions</h3>
+
+			<p class="mt-8 text-xl font-bold">
+				Remember the days of jam-packed living rooms and good ol’ couch co-op? Remote Controller
+				helps relive those moments by connecting you and your friends online with your favorite
+				local multiplayer games. Just like old times, but better.
+			</p>
 		</div>
 	</section>
 
 	<section class="md:w-2/3 p-4 h-full">
-		<div class="mockup-window border bg-primary text-primary-content">
-			<div class="flex justify-center px-4 py-16 bg-base-200 h-[60vh]">Hello!</div>
+		<div class="mockup-window border bg-primary text-primary-content md:w-3/4 m-auto">
+			<img src="/gamepad.jpg" alt="gamepad" class="md:aspect-video aspect-auto" />
 		</div>
 	</section>
 </div>

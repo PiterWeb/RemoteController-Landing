@@ -19,11 +19,12 @@
 
 	<section class="p-6 grid grid-cols-1 md:grid-cols-6 gap-12">
 		<ul id="nav-explore-menu" class="menu bg-base-200 w-full rounded-box">
+			<li><a href="/info/overview">Overview</a></li>
 			<li class="menu-title">Guides</li>
-			<li><a href="/info/installation">Installation</a></li>
-			<li><a href="/info/how-to-use">How to use</a></li>
+			<li><a href="/info/guides/installation">Installation</a></li>
+			<li><a href="/info/guides/how-to-use">How to use</a></li>
 			<li class="menu-title">Resources</li>
-			<li><a href="/info/security">Security</a></li>
+			<li><a href="/info/resources/security">Security</a></li>
 			<!-- <li><a href="" /></li> -->
 		</ul>
 
