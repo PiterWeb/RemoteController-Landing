@@ -72,23 +72,25 @@
 <section class="w-full bg-slate-700 py-12">
 	<h3 class="text-4xl font-black text-white leading-[1.1] text-center">Features</h3>
 	<div class="flex flex-row flex-wrap md:flex-nowrap gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12">
-		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		<article class="ml-12 md:ml-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 			<Card
 				title="Play Any Game"
 				description="Remote Controller works with any game that supports multiple controllers. Just launch the game, and Remote Controller will take care of the rest."
 			/>
 			<Card
-				title="Windows 10/11 compatible"
-				description="The most used operating system is supported in version 10 and 11."
+				title="Low Latency"
+				description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
 			/>
+
 			<Card
 				title="P2P Connection"
 				description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
 			/>
 			<Card
-				title="Low Latency"
-				description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
+				title="Windows 10/11 compatible"
+				description="The most used operating system is supported in version 10 and 11."
 			/>
+
 			<Card
 				title="No account required"
 				description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to start playing."
