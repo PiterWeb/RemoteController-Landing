@@ -1,8 +1,3 @@
-<script context="module">
-	import h1 from '$lib/md/h1.svelte';
-	export {h1};
-</script>
-
 <svelte:head>
 	<title>Remote Controller 🕹 Explore</title>
 </svelte:head>
@@ -29,7 +24,11 @@
 		</ul>
 
 		<article class="md:col-span-5">
-			<slot />
+			<div class="bg-gray-100">
+				<div class="container mx-auto py-6 px-4">
+					<slot />
+				</div>
+			</div>
 		</article>
 	</section>
 </div>

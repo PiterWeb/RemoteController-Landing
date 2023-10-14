@@ -1,11 +1,12 @@
 <script>
 	import InfoSVG from '$lib/assets/info.svg?raw';
 	import DownloadSVG from '$lib/assets/download.svg?raw';
+	import Card from '$lib/components/Card.svelte';
 </script>
 
 <svelte:head>
 	<title>Remote Controller 🕹 Play local co-op games online with your FRIENDS</title>
-	<meta name="description" content="Bring Back Afternoon Gaming Sessions">
+	<meta name="description" content="Bring Back Afternoon Gaming Sessions" />
 </svelte:head>
 
 <div class="flex flex-col md:w-full w-11/12 mt-12 md:flex-row">
@@ -37,24 +38,69 @@
 				class="btn btn-primary btn-lg">{@html DownloadSVG} Start Playing</button
 			>
 		</div>
-
-		<div class="mt-24">
-			<h3 class="text-4xl font-black leading-[1.1]">Bring Back Afternoon Gaming Sessions</h3>
-
-			<p class="mt-8 text-xl font-bold">
-				Remember the days of jam-packed living rooms and good ol’ couch co-op? Remote Controller
-				helps relive those moments by connecting you and your friends online with your favorite
-				local multiplayer games. Just like old times, but better.
-			</p>
-		</div>
 	</section>
 
-	<section class="md:w-2/3 p-4 h-full">
+	<section class="md:w-2/3 p-4 h-full ml-12">
 		<div class="mockup-window border bg-primary text-primary-content md:w-3/4 m-auto">
 			<img src="/gamepad.jpg" alt="gamepad" class="md:aspect-video aspect-auto" />
 		</div>
 	</section>
 </div>
+<section class="flex flex-row flex-wrap md:flex-nowrap gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12">
+	<div class="ml-12">
+		<h3 class="text-4xl font-black leading-[1.1]">Bring Back Afternoon Gaming Sessions</h3>
+
+		<p class="mt-8 text-xl font-bold">
+			Remember the days of jam-packed living rooms and good ol’ couch co-op? Remote Controller helps
+			relive those moments by connecting you and your friends online with your favorite local
+			multiplayer games. Just like old times, but better.
+		</p>
+	</div>
+	<div class="ml-12">
+		<h3 class="text-4xl font-black leading-[1.1]">Play Together, Even When Apart</h3>
+
+		<p class="mt-8 text-xl font-bold">
+			<!-- create a text that explains how RemoteController works and what are the beneficts of switching from steam remoteplay together -->
+			Remote Controller is a free app that lets you play local co-op games online with your friends,
+			without having to use Steam Remote Play Together, Parsec, or any other remote play app. It works
+			by streaming the game from your PC to your friend’s PC, and relaying their input back to yours.
+			It’s like you’re both playing on the same computer!
+		</p>
+	</div>
+</section>
+
+<section class="w-full bg-slate-700 py-12">
+	<h3 class="text-4xl font-black text-white leading-[1.1] text-center">Features</h3>
+	<div class="flex flex-row flex-wrap md:flex-nowrap gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12">
+		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+			<Card
+				title="Play Any Game"
+				description="Remote Controller works with any game that supports multiple controllers. Just launch the game, and Remote Controller will take care of the rest."
+			/>
+			<Card
+				title="Windows 10/11 compatible"
+				description="The most used operating system is supported in version 10 and 11."
+			/>
+			<Card
+				title="P2P Connection"
+				description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
+			/>
+			<Card
+				title="Low Latency"
+				description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
+			/>
+			<Card
+				title="No account required"
+				description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to start playing."
+			/>
+
+			<Card
+				title="Free and Open Source"
+				description="Remote Controller is free and open source. You can check out the source code on GitHub."
+			/>
+		</article>
+	</div>
+</section>
 
 <dialog id="download-dialog" class="modal">
 	<div class="modal-box">
