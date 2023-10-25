@@ -9,25 +9,26 @@
 	<meta name="description" content="Bring Back Afternoon Gaming Sessions" />
 </svelte:head>
 
-<div class="flex flex-col md:w-full w-11/12 mt-12 md:flex-row">
-	<section class="md:w-1/3 ml-12">
-		<h2 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
-			Play
-			<span
-				class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
-				>LOCAL</span
-			>
+<div class="flex flex-col w-full px-6 md:px-0 mt-12 md:flex-row md:gap-4">
+	<section class="md:w-1/3 md:ml-24 flex flex-col justify-evenly">
+		<div>
+			<h2 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
+				Play
+				<span
+					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+					>LOCAL</span
+				>
 
-			co-op games
-			<span
-				class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
-				>ONLINE</span
-			>
-		</h2>
-		<h3 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h3>
-
+				co-op games
+				<span
+					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
+					>ONLINE</span
+				>
+			</h2>
+			<h3 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h3>
+		</div>
 		<div class="flex flex-col space-y-4">
-			<a href="/info" class="btn btn-lg">{@html InfoSVG} Learn more</a>
+			<a href="/info" class="btn btn-lg">{@html InfoSVG} User Guides</a>
 
 			<button
 				on:click={() => {
@@ -40,7 +41,7 @@
 		</div>
 	</section>
 
-	<section class="md:w-2/3 p-4 h-full ml-12">
+	<section class="md:w-2/3 p-4 h-full">
 		<div class="mockup-window border bg-primary text-primary-content md:w-3/4 m-auto">
 			<img src="/gamepad.jpg" alt="gamepad" class="md:aspect-video aspect-auto" />
 		</div>
@@ -48,23 +49,20 @@
 </div>
 <section class="flex flex-row flex-wrap md:flex-nowrap gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12">
 	<div class="ml-12">
-		<h3 class="text-4xl font-black leading-[1.1]">Bring Back Afternoon Gaming Sessions</h3>
+		<h3 class="text-4xl font-bold leading-[1.1]">Bring Back Afternoon Gaming Sessions</h3>
 
-		<p class="mt-8 text-xl font-bold">
-			Remember the days of jam-packed living rooms and good ol’ couch co-op? Remote Controller helps
-			relive those moments by connecting you and your friends online with your favorite local
-			multiplayer games. Just like old times, but better.
+		<p class="mt-8 text-xl">
+			Remote Controller helps relive those moments by connecting you and your friends online with
+			your favorite local multiplayer games. Just like old times, but better.
 		</p>
 	</div>
 	<div class="ml-12">
-		<h3 class="text-4xl font-black leading-[1.1]">Play Together, Even When Apart</h3>
+		<h3 class="text-4xl font-bold leading-[1.1]">Play Together, Even When Apart</h3>
 
-		<p class="mt-8 text-xl font-bold">
-			<!-- create a text that explains how RemoteController works and what are the beneficts of switching from steam remoteplay together -->
-			Remote Controller is a free app that lets you play local co-op games online with your friends,
-			without having to use Steam Remote Play Together, Parsec, or any other remote play app. It works
-			by streaming the game from your PC to your friend’s PC, and relaying their input back to yours.
-			It’s like you’re both playing on the same computer!
+		<p class="mt-8 text-xl">
+			Play local co-op games online with your friends, without having to use Steam or any other
+			propietary gaming online services. It just works, it’s like you’re both playing on the same
+			computer!
 		</p>
 	</div>
 </section>
