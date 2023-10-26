@@ -24,12 +24,13 @@
 			description: 'Total production: 100 units'
 		}
 	];
+
 </script>
 
 <InfoTemplate title="Overview" description="Here's a quick overview of your application.">
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 		{#each cards as { title, description }}
-			<Card title={title} description={description} />
+			<Card {title} {description} shadow={false} />
 		{/each}
 	</div>
 </InfoTemplate>

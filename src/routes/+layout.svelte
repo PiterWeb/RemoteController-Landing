@@ -42,7 +42,7 @@
 
 <a
 	id="support-us"
-	class="fixed bottom-10 right-8 text-white content-center bg-primary flex px-3 py-4 rounded-2xl gap-1 font-bold"
+	class="fixed bottom-10 right-8 text-white content-center bg-primary flex px-6 py-4 rounded-2xl gap-1 font-bold"
 	href="https://ko-fi.com/piterdev"
 	target="_blank"
 	rel="noopener noreferrer"

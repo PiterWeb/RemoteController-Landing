@@ -2,6 +2,7 @@
 	import InfoSVG from '$lib/assets/info.svg?raw';
 	import DownloadSVG from '$lib/assets/download.svg?raw';
 	import Card from '$lib/components/Card.svelte';
+	import TextBlock from '$lib/components/TextBlock.svelte';
 </script>
 
 <svelte:head>
@@ -9,7 +10,9 @@
 	<meta name="description" content="Bring Back Afternoon Gaming Sessions" />
 </svelte:head>
 
-<div class="flex flex-col w-full px-6 md:px-0 mt-12 md:flex-row md:gap-4">
+<div
+	class="flex flex-col w-full px-6 md:px-0 mt-12 md:flex-row md:gap-4 h-[calc(100vh-3rem-4rem)] md:h-[calc(100vh-3rem-4rem-1rem)]"
+>
 	<section class="md:w-1/3 md:ml-24 flex flex-col justify-evenly">
 		<div>
 			<h2 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
@@ -42,38 +45,62 @@
 	</section>
 
 	<section class="md:w-2/3 p-4 h-full">
-		<div class="mockup-window border bg-primary text-primary-content md:w-3/4 m-auto">
-			<img src="/gamepad.jpg" alt="gamepad" class="md:aspect-video aspect-auto" />
-		</div>
+		<img src="/gamepad-aqua.jpg" alt="gamepad" class="m-auto w-3/5" />
 	</section>
 </div>
-<section class="flex flex-row flex-wrap md:flex-nowrap gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12">
-	<div class="ml-12">
-		<h3 class="text-4xl font-bold leading-[1.1]">Bring Back Afternoon Gaming Sessions</h3>
+<section
+	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
+>
+	<TextBlock
+		title="What is Remote Controller?"
+		content="Remote Controller is a free and open source app that lets you play local co-op games online
+	with your friends, without having to use Steam or any other proprietary gaming online
+	services. It just works, it’s like you’re both playing on the same computer!"
+	/>
 
-		<p class="mt-8 text-xl">
-			Remote Controller helps relive those moments by connecting you and your friends online with
-			your favorite local multiplayer games. Just like old times, but better.
-		</p>
-	</div>
-	<div class="ml-12">
-		<h3 class="text-4xl font-bold leading-[1.1]">Play Together, Even When Apart</h3>
+	<TextBlock
+		title="How does it work?"
+		content="Remote Controller uses a peer-to-peer connection, so you don’t have to worry about your data being
+	compromised. It also has low latency, so you can play games that require quick reflexes."
+	/>
+
+	<TextBlock
+		title="How do I get started?"
+		content="Just follow the steps to download and install the app to start playing."
+	/>
+
+	<!-- <h3 class="text-4xl font-bold leading-[1.1]"></h3>
 
 		<p class="mt-8 text-xl">
 			Play local co-op games online with your friends, without having to use Steam or any other
 			propietary gaming online services. It just works, it’s like you’re both playing on the same
 			computer!
-		</p>
+		</p> -->
+</section>
+<section class="mt-24 mb-24 bg-slate-700 w-full py-12 text-white">
+	<h3 class="text-4xl font-black text-center leading-[1.1]">How to use</h3>
+	<div
+		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
+	>
+		<ul class="steps font-bold">
+			<li class="step step-primary">Install Drivers</li>
+			<li class="step step-primary">Download APP</li>
+			<li class="step step-primary">Create a Client</li>
+			<li class="step step-primary">Share Client Code</li>
+			<li class="step step-primary">Create Host</li>
+			<li class="step step-primary">Share Host Code</li>
+			<li class="step step-primary">Play</li>
+		</ul>
 	</div>
 </section>
 
-<section class="w-full bg-slate-700 py-12">
-	<h3 class="text-4xl font-black text-white leading-[1.1] text-center">Features</h3>
-	<div class="flex flex-row flex-wrap md:flex-nowrap gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12">
-		<article class="ml-12 md:ml-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+<section class="w-full py-12">
+	<h3 class="text-4xl font-black leading-[1.1] text-center">Features</h3>
+	<div class="mt-24 mb-24 md:mx-auto md:w-3/4 w-11/12">
+		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-12 md:ml-0 gap-6">
 			<Card
 				title="Play Any Game"
-				description="Remote Controller works with any game that supports multiple controllers. Just launch the game, and Remote Controller will take care of the rest."
+				description="Remote Controller works with any game that supports multiple controllers even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest."
 			/>
 			<Card
 				title="Low Latency"
@@ -97,6 +124,10 @@
 			<Card
 				title="Free and Open Source"
 				description="Remote Controller is free and open source. You can check out the source code on GitHub."
+			/>
+			<Card
+				title="Share your video & audio"
+				description="You can enjoy your games with high quality video and audio streaming"
 			/>
 		</article>
 	</div>
