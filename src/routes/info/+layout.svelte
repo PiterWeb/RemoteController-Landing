@@ -19,8 +19,8 @@
 			<li><a href="/info/guides/installation">Installation</a></li>
 			<li><a href="/info/guides/how-to-use">How to use</a></li>
 			<li class="menu-title">Resources</li>
+			<li><a href="/info/resources/faq">FAQ</a></li>
 			<li><a href="/info/resources/security">Security</a></li>
-			<!-- <li><a href="" /></li> -->
 		</ul>
 
 		<article class="md:col-span-5">

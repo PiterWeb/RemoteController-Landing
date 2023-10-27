@@ -1,5 +1,5 @@
 <script>
-	import InfoSVG from '$lib/assets/info.svg?raw';
+	import ArrowAction from '$lib/components/ArrowAction.svelte';
 	import DownloadSVG from '$lib/assets/download.svg?raw';
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
@@ -30,26 +30,20 @@
 			</h2>
 			<h3 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h3>
 		</div>
-		<div class="flex flex-col space-y-4">
-			<a href="/info" class="btn btn-lg">{@html InfoSVG} User Guides</a>
 
-			<button
-				on:click={() => {
-					const dialog = document.getElementById('download-dialog');
-					// @ts-ignore
-					dialog?.showModal();
-				}}
-				class="btn btn-primary btn-lg">{@html DownloadSVG} Start Playing</button
-			>
-		</div>
+		<a href="/info" class="btn btn-primary btn-lg w-full space-y-4"
+			>{@html DownloadSVG} Start Playing</a
+		>
 	</section>
 
 	<section class="md:w-2/3 p-4 h-full">
-		<img src="/gamepad-aqua.jpg" alt="gamepad" class="m-auto w-3/5" />
+		<img src="/gamepad-aqua.jpg" alt="gamepad" class="m-auto w-3/5 lg:-rotate-12" />
 	</section>
 </div>
+<ArrowAction targetId="about-remote-controller" />
 <section
-	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
+	id="about-remote-controller"
+	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 md:mx-auto md:3/4 w-11/12"
 >
 	<TextBlock
 		title="What is Remote Controller?"
@@ -77,12 +71,12 @@
 			computer!
 		</p> -->
 </section>
-<section class="mt-24 mb-24 bg-slate-700 w-full py-12 text-white">
-	<h3 class="text-4xl font-black text-center leading-[1.1]">How to use</h3>
+<section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
+	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">How to use</h3>
 	<div
 		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
 	>
-		<ul class="steps font-bold">
+		<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto">
 			<li class="step step-primary">Install Drivers</li>
 			<li class="step step-primary">Download APP</li>
 			<li class="step step-primary">Create a Client</li>
@@ -95,7 +89,7 @@
 </section>
 
 <section class="w-full py-12">
-	<h3 class="text-4xl font-black leading-[1.1] text-center">Features</h3>
+	<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Features</h3>
 	<div class="mt-24 mb-24 md:mx-auto md:w-3/4 w-11/12">
 		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-12 md:ml-0 gap-6">
 			<Card

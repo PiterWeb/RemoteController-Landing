@@ -2,6 +2,7 @@
 	import '../app.css';
 	import GamepadSVG from '$lib/assets/gamepad.svg?raw';
 	import SupportSVG from '$lib/assets/support.svg?raw';
+	import Footer from '$lib/components/Footer.svelte';
 
 	import { onNavigate } from '$app/navigation';
 
@@ -40,15 +41,22 @@
 	<slot />
 </main>
 
+<Footer/>
+
+<div class="indicator fixed bottom-10 right-8">
 <a
 	id="support-us"
-	class="fixed bottom-10 right-8 text-white content-center bg-primary flex px-6 py-4 rounded-2xl gap-1 font-bold"
+	class=" text-white content-center bg-primary flex px-6 py-4 md:rounded-2xl rounded-full gap-1 font-bold"
 	href="https://ko-fi.com/piterdev"
 	target="_blank"
 	rel="noopener noreferrer"
 >
-	Support us {@html SupportSVG}
-</a>
+		<span class="indicator-item badge badge-info rounded-full" />
+
+		<span class="md:block hidden">Support us</span>
+		{@html SupportSVG}
+	</a>
+</div>
 
 <style>
 	nav {
