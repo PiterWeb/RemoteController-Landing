@@ -30,11 +30,13 @@
 			</a>
 		</h1>
 	</div>
-	<!-- <div class="flex-none">
-		<ul class="menu menu-horizontal px-1">
-			
+	<div class="flex-none">
+		<ul class="menu menu-horizontal gap-4 px-1 font-bold">
+			<li><a href="/info/guides" class="hover:text-inherit">Guides</a></li>
+			<li><a href="/download" class="hover:text-inherit">Download</a></li>
+			<li><a href="/client" class="hover:text-inherit">Play</a></li>
 		</ul>
-	</div> -->
+	</div>
 </nav>
 
 <main>

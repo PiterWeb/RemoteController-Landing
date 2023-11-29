@@ -37,7 +37,7 @@
 	</section>
 
 	<section class="md:w-2/3 p-4 h-full">
-		<img src="/gamepad-aqua.jpg" alt="gamepad" class="m-auto w-3/5 lg:-rotate-12" />
+		<img src="/gamepad-aqua.webp" alt="gamepad" class="m-auto w-3/5 -rotate-12" />
 	</section>
 </div>
 <ArrowAction targetId="about-remote-controller" />
@@ -76,15 +76,25 @@
 	<div
 		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
 	>
-		<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto">
-			<li class="step step-primary">Install Drivers</li>
-			<li class="step step-primary">Download APP</li>
-			<li class="step step-primary">Create a Client</li>
-			<li class="step step-primary">Share Client Code</li>
-			<li class="step step-primary">Create Host</li>
-			<li class="step step-primary">Share Host Code</li>
-			<li class="step step-primary">Play</li>
-		</ul>
+		<div class="flex flex-col items-center gap-4">
+			<p class="text-2xl">Connect your gamepad</p>
+			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
+				<li class="step step-info">Download APP</li>
+				<li data-content="1" class="step step-info">Use Browser Client</li>
+				<li data-content="2" class="step step-primary">Share Codes</li>
+				<li data-content="3" class="step step-primary">Play</li>
+			</ul>
+		</div>
+
+		<div class="flex flex-col items-center gap-4">
+			<p class="text-2xl">Stream your videogame</p>
+			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
+				<li class="step step-primary">Install Drivers</li>
+				<li class="step step-primary">Download APP</li>
+				<li class="step step-primary">Share Codes</li>
+				<li class="step step-primary">Play</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -105,10 +115,6 @@
 				title="P2P Connection"
 				description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
 			/>
-			<Card
-				title="Windows 10/11 compatible"
-				description="The most used operating system is supported in version 10 and 11."
-			/>
 
 			<Card
 				title="No account required"
@@ -124,6 +130,30 @@
 				description="You can enjoy your games with high quality video and audio streaming"
 			/>
 		</article>
+	</div>
+</section>
+
+<section class="flex flex-col w-full px-6 md:px-0 md:flex-row md:gap-4 md:items-center my-12">
+	<div class="md:ml-24 md:w-1/3">
+		<h3 class="text-6xl font-black leading-[1.1] text-center capitalize xl:text-left">
+			OS Support
+		</h3>
+
+		<p class="mt-8 text-xl">We got you covered! Remote Controller supports Windows, and Linux.</p>
+		<p class="mt-8 text-xl">
+			Also we have a browser client for those who don't want to install anything, it works in almost
+			every browser.
+		</p>
+
+		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
+			<Card title="Windows" />
+			<Card title="Linux" />
+			<Card title="Browser" />
+		</div>
+	</div>
+
+	<div class="md:w-2/3 p-4 h-full">
+		<img src="/os-banner.webp" alt="windows OS symbol" class="m-auto w-3/5" />
 	</div>
 </section>
 
