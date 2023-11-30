@@ -10,7 +10,8 @@
 >
 	<h2
 		class="font-bold group-hover:text-white transition-colors duration-300"
-		class:text-3xl={description === undefined}
+		class:text-2xl={description === undefined}
+		class:text-center={description === undefined}
 		class:text-lg={description !== undefined}
 	>
 		{title}

@@ -26,7 +26,7 @@
 			<a href="/" class="btn btn-ghost normal-case text-xl items-start content-center">
 				{@html GamepadSVG}
 
-				Remote Controller
+				<span class="hidden md:block">Remote Controller</span>
 			</a>
 		</h1>
 	</div>

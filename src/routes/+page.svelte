@@ -1,8 +1,16 @@
-<script>
+<script lang="ts">
 	import ArrowAction from '$lib/components/ArrowAction.svelte';
 	import DownloadSVG from '$lib/assets/download.svg?raw';
+	import GuideSVG from '$lib/assets/guide.svg?raw';
+	import CrossSVG from '$lib/assets/cross.svg?raw';
+	import PlaySVG from '$lib/assets/play.svg?raw';
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
+
+	function openMainDialog() {
+		const dialog = document.getElementById('main-dialog') as HTMLDialogElement;
+		dialog.showModal();
+	}
 </script>
 
 <svelte:head>
@@ -31,9 +39,12 @@
 			<h3 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h3>
 		</div>
 
-		<a href="/info" class="btn btn-primary btn-lg w-full space-y-4"
-			>{@html DownloadSVG} Start Playing</a
-		>
+		<div class="flex flex-col gap-4">
+			<a href="/info" class="btn btn-lg w-full space-y-4">{@html GuideSVG} Explore Our Guides</a>
+			<button on:click={openMainDialog} class="btn btn-primary btn-lg w-full space-y-4"
+				>{@html DownloadSVG} Start Playing</button
+			>
+		</div>
 	</section>
 
 	<section class="md:w-2/3 p-4 h-full">
@@ -139,16 +150,20 @@
 			OS Support
 		</h3>
 
-		<p class="mt-8 text-xl">We got you covered! Remote Controller supports Windows, and Linux.</p>
+		<p class="mt-8 text-xl">
+			We got you covered! Remote Controller supports Windows, and Linux (Soon).
+		</p>
 		<p class="mt-8 text-xl">
 			Also we have a browser client for those who don't want to install anything, it works in almost
 			every browser.
+			<br />
+			<a class="link link-secondary" href="/client">Try our web client </a>
 		</p>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
 			<Card title="Windows" />
-			<Card title="Linux" />
 			<Card title="Browser" />
+			<Card title="Linux (Soon)" />
 		</div>
 	</div>
 
@@ -157,21 +172,67 @@
 	</div>
 </section>
 
-<dialog id="download-dialog" class="modal">
-	<div class="modal-box">
-		<h3 class="font-bold text-lg">Unlock the Power of Friendship Gaming!</h3>
-		<!-- <p class="py-4 text-base">Support the Cause and Keep It Free!</p> -->
-		<div class="modal-action flex-wrap gap-x-2 gap-y-4 md:justify-between">
-			<form method="dialog">
-				<!-- if there is a button in form, it will close the modal -->
-				<button class="btn">Not Now</button>
-			</form>
-			<div class="flex flex-row gap-x-2">
-				<!-- <a class="btn btn-accent btn-disabled" href="https://ko-fi.com/piterdev">Show your love</a> -->
-				<a class="btn btn-primary" href="https://github.com/PiterWeb/RemoteController/releases"
-					>Get Gaming!</a
-				>
+<dialog id="main-dialog" class="modal">
+	<div class="modal-box max-w-[75vw] p-0">
+		<div class="md:flex w-full flex-row hidden">
+			<div
+				class="grid flex-grow h-[75vh] w-1/3 card bg-neutral text-neutral-content rounded-box place-items-center"
+			>
+				<div class="flex flex-col gap-4">
+					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Play in Browser</h3>
+
+					<p class="text-center px-6">
+						You can play in your browser without installing anything, just go to our client page and
+						share the code with your friends.
+					</p>
+				</div>
+
+				<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
+			</div>
+			<div class="flex flex-col flex-grow h-[75vh] w-2/3">
+				<form method="dialog" class="flex flex-row justify-end p-4">
+					<button class="btn btn-ghost btn-sm rounded-full modal-close">
+						{@html CrossSVG}
+					</button>
+				</form>
+				<div class="grid card place-items-center rounded-box h-full">
+					<div class="flex flex-col gap-4">
+						<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Download APP</h3>
+
+						<p>Download the latest version of Remote Controller for your platform.</p>
+					</div>
+
+					<div>
+						<h4 class="text-lg font-bold">
+							Supported Platforms
+						</h4>
+						<div class="grid grid-cols-1 lg:grid-cols-2 md:gap-2 gap-4 my-6 w-full">
+							<Card title="Windows" />
+							<Card title="Linux (Soon)" />
+						</div>
+					</div>
+
+					<a href="" class="btn btn-primary btn-lg space-y-4">{@html DownloadSVG} Download APP</a>
+				</div>
+			</div>
+		</div>
+		<div class="flex w-full flex-col md:hidden">
+			<!-- mobile version -->
+			<div class="grid flex-grow h-[75vh] w-full card bg-neutral text-neutral-content rounded-box place-items-center">
+				<div class="flex flex-col gap-2">
+					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize px-4">Play in Browser</h3>
+
+					<p class="text-center px-8">
+						You can play in your browser without installing anything, just go to our client page and
+						share the code with your friends.
+					</p>
+				</div>
+
+				<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
 			</div>
 		</div>
 	</div>
+	<form method="dialog" class="modal-backdrop">
+		<button>close</button>
+	</form>
 </dialog>
