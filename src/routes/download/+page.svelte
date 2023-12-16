@@ -1,6 +1,5 @@
 <script lang="ts">
 	import InfoTemplate from '$lib/components/InfoTemplate.svelte';
-    import { page } from '$app/stores';
 	import Card from '$lib/components/Card.svelte';
 
 	interface CardType {
@@ -35,7 +34,7 @@
 			title: 'Browser Client (Still in development)',
 			description:
 				'You can use Remote Controller without installing the desktop client. Just open the browser client and start playing.',
-			link: $page.url.origin + '/client'
+			link: '/client'
 		}
 	];
 </script>

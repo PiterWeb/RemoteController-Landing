@@ -202,7 +202,7 @@
 						</div>
 					</div>
 
-					<a href="" class="btn btn-primary btn-lg space-y-4">{@html DownloadSVG} Download APP</a>
+					<a href="/download" class="btn btn-primary btn-lg space-y-4">{@html DownloadSVG} Download APP</a>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,6 @@
 <script>
 	import InfoTemplate from '$lib/components/InfoTemplate.svelte';
 
-	import { page } from '$app/stores';
 
 </script>
 
@@ -13,7 +12,7 @@
 		</p>
 
 
-		<a class="link" href={$page.url.origin + '/download'}>
+		<a class="link" href="/download">
 			Download the latest Remote Controller executable</a
 		>
 

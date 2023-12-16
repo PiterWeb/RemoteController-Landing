@@ -1,7 +1,6 @@
 <script lang="ts">
 	import InfoTemplate from '$lib/components/InfoTemplate.svelte';
 	import Card from '$lib/components/Card.svelte';
-	import { page } from '$app/stores';
 
 	interface Card {
 		title: string;
@@ -34,7 +33,7 @@
 >
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 		{#each cards as { title, description, link }}
-			<a href={$page.url.origin + link}>
+			<a href={link}>
 				<Card {title} {description} shadow={false} />
 			</a>
 		{/each}
