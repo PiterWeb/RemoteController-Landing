@@ -73,14 +73,6 @@
 		title="How do I get started?"
 		content="Just follow the steps to download and install the app to start playing."
 	/>
-
-	<!-- <h3 class="text-4xl font-bold leading-[1.1]"></h3>
-
-		<p class="mt-8 text-xl">
-			Play local co-op games online with your friends, without having to use Steam or any other
-			propietary gaming online services. It just works, it’s like you’re both playing on the same
-			computer!
-		</p> -->
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
 	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">How to use</h3>
@@ -203,9 +195,7 @@
 					</div>
 
 					<div>
-						<h4 class="text-lg font-bold">
-							Supported Platforms
-						</h4>
+						<h4 class="text-lg font-bold">Supported Platforms</h4>
 						<div class="grid grid-cols-1 lg:grid-cols-2 md:gap-2 gap-4 my-6 w-full">
 							<Card title="Windows" />
 							<Card title="Linux (Soon)" />
@@ -218,9 +208,13 @@
 		</div>
 		<div class="flex w-full flex-col md:hidden">
 			<!-- mobile version -->
-			<div class="grid flex-grow h-[75vh] w-full card bg-neutral text-neutral-content rounded-box place-items-center">
+			<div
+				class="grid flex-grow h-[75vh] w-full card bg-neutral text-neutral-content rounded-box place-items-center"
+			>
 				<div class="flex flex-col gap-2">
-					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize px-4">Play in Browser</h3>
+					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize px-4">
+						Play in Browser
+					</h3>
 
 					<p class="text-center px-8">
 						You can play in your browser without installing anything, just go to our client page and
