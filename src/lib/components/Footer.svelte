@@ -18,14 +18,13 @@
 	<nav>
 		<header class="footer-title">Social</header>
 		<a href="https://github.com/PiterWeb/RemoteController" class="link link-hover">Github</a>
-		<a class="link link-hover">Contact</a>
+		<a href="mailto:piterzdev@gmail.com" class="link link-hover">Contact</a>
 	</nav>
-	<nav>
+	<!-- <nav>
 		<header class="footer-title">Legal</header>
 		<a class="link link-hover">Terms of use</a>
 		<a class="link link-hover">Privacy policy</a>
-		<a class="link link-hover">Cookie policy</a>
-	</nav>
+	</nav> -->
 </footer>
 
 <style>
