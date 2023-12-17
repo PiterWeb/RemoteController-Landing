@@ -149,7 +149,7 @@
 			Also we have a browser client for those who don't want to install anything, it works in almost
 			every browser.
 			<br />
-			<a class="link link-secondary" href="/client">Try our web client </a>
+			<a class="link link-secondary" href="https://remote-controller-client.vercel.app/">Try our web client </a>
 		</p>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
@@ -179,7 +179,7 @@
 					</p>
 				</div>
 
-				<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
+				<a href="https://remote-controller-client.vercel.app/" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
 			</div>
 			<div class="flex flex-col flex-grow h-[75vh] w-2/3">
 				<form method="dialog" class="flex flex-row justify-end p-4">
@@ -223,7 +223,7 @@
 					</p>
 				</div>
 
-				<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
+				<a href="https://remote-controller-client.vercel.app/" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
 			</div>
 		</div>
 	</div>
