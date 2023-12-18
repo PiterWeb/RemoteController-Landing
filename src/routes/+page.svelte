@@ -17,6 +17,25 @@
 <svelte:head>
 	<title>Remote Controller 🕹 Play local co-op games online with your FRIENDS</title>
 	<meta name="description" content="Bring Back Afternoon Gaming Sessions" />
+	<meta
+		property="og:title"
+		content="Remote
+		Controller
+		🕹
+		Play
+		local
+		co-op
+		games
+		online
+		with
+		your
+		FRIENDS"
+	/>
+	<meta property="og:site_name" content="Remote Controller" />
+	<meta property="og:url" content="https://remote-controller.vercel.app" />
+	<meta property="og:description" content="Bring Back Afternoon Gaming Sessions" />
+	<meta property="og:type" content="product" />
+	<meta property="og:image" content="https://remote-controller.vercel.app/gamepad-aqua.webp" />
 </svelte:head>
 
 <div
