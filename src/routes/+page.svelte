@@ -6,6 +6,7 @@
 	import PlaySVG from '$lib/assets/play.svg?raw';
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
+	import ScrollAnimationWrapper from '$lib/components/ScrollAnimationWrapper.svelte';
 
 	function openMainDialog() {
 		const dialog = document.getElementById('main-dialog') as HTMLDialogElement;
@@ -40,10 +41,15 @@
 		</div>
 
 		<div class="flex flex-col gap-4">
-			<a href="/info" class="btn btn-lg w-full space-y-4">{@html GuideSVG} Explore Our Guides</a>
-			<button on:click={openMainDialog} class="btn btn-primary btn-lg w-full space-y-4"
-				>{@html DownloadSVG} Start Playing</button
-			>
+			<ScrollAnimationWrapper selectedAnimation="slide">
+				<a href="/info" class="btn btn-lg w-full space-y-4">{@html GuideSVG} Explore Our Guides</a>
+			</ScrollAnimationWrapper>
+
+			<ScrollAnimationWrapper selectedAnimation="slide">
+				<button on:click={openMainDialog} class="btn btn-primary btn-lg w-full space-y-4"
+					>{@html DownloadSVG} Start Playing</button
+				>
+			</ScrollAnimationWrapper>
 		</div>
 	</section>
 
@@ -56,48 +62,58 @@
 	id="about-remote-controller"
 	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 md:mx-auto md:3/4 w-11/12"
 >
-	<TextBlock
-		title="What is Remote Controller?"
-		content="Remote Controller is a free and open source app that lets you play local co-op games online
+	<ScrollAnimationWrapper selectedAnimation="slide">
+		<TextBlock
+			title="What is Remote Controller?"
+			content="Remote Controller is a free and open source app that lets you play local co-op games online
 	with your friends, without having to use Steam or any other proprietary gaming online
 	services. It just works, it’s like you’re both playing on the same computer!"
-	/>
+		/>
+	</ScrollAnimationWrapper>
 
-	<TextBlock
-		title="How does it work?"
-		content="Remote Controller uses a peer-to-peer connection, so you don’t have to worry about your data being
+	<ScrollAnimationWrapper selectedAnimation="slide">
+		<TextBlock
+			title="How does it work?"
+			content="Remote Controller uses a peer-to-peer connection, so you don’t have to worry about your data being
 	compromised. It also has low latency, so you can play games that require quick reflexes."
-	/>
+		/>
+	</ScrollAnimationWrapper>
 
-	<TextBlock
-		title="How do I get started?"
-		content="Just follow the steps to download and install the app to start playing."
-	/>
+	<ScrollAnimationWrapper selectedAnimation="slide">
+		<TextBlock
+			title="How do I get started?"
+			content="Just follow the steps to download and install the app to start playing."
+		/>
+	</ScrollAnimationWrapper>
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
 	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">How to use</h3>
 	<div
 		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
 	>
-		<div class="flex flex-col items-center gap-4">
-			<p class="text-2xl">Connect your gamepad</p>
-			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
-				<li class="step step-info">Download APP</li>
-				<li data-content="1" class="step step-info">Use Browser Client</li>
-				<li data-content="2" class="step step-primary">Share Codes</li>
-				<li data-content="3" class="step step-primary">Play</li>
-			</ul>
-		</div>
+		<ScrollAnimationWrapper selectedAnimation="slide">
+			<div class="flex flex-col items-center gap-4">
+				<p class="text-2xl">Connect your gamepad</p>
+				<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
+					<li class="step step-info">Download APP</li>
+					<li data-content="1" class="step step-info">Use Browser Client</li>
+					<li data-content="2" class="step step-primary">Share Codes</li>
+					<li data-content="3" class="step step-primary">Play</li>
+				</ul>
+			</div>
+		</ScrollAnimationWrapper>
 
-		<div class="flex flex-col items-center gap-4">
-			<p class="text-2xl">Stream your videogame</p>
-			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
-				<li class="step step-primary">Install Drivers</li>
-				<li class="step step-primary">Download APP</li>
-				<li class="step step-primary">Share Codes</li>
-				<li class="step step-primary">Play</li>
-			</ul>
-		</div>
+		<ScrollAnimationWrapper selectedAnimation="slide">
+			<div class="flex flex-col items-center gap-4">
+				<p class="text-2xl">Stream your videogame</p>
+				<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
+					<li class="step step-primary">Install Drivers</li>
+					<li class="step step-primary">Download APP</li>
+					<li class="step step-primary">Share Codes</li>
+					<li class="step step-primary">Play</li>
+				</ul>
+			</div>
+		</ScrollAnimationWrapper>
 	</div>
 </section>
 
@@ -105,38 +121,55 @@
 	<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Features</h3>
 	<div class="mt-24 mb-24 md:mx-auto md:w-3/4 w-11/12">
 		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-12 md:ml-0 gap-6">
-			<Card
-				title="Play Any Game"
-				description="Remote Controller works with any game that supports multiple controllers even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest."
-			/>
-			<Card
-				title="Low Latency"
-				description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
-			/>
-
-			<Card
-				title="P2P Connection"
-				description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
-			/>
-
-			<Card
-				title="No account required"
-				description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to start playing."
-			/>
-
-			<Card
-				title="Free and Open Source"
-				description="Remote Controller is free and open source. You can check out the source code on GitHub."
-			/>
-			<Card
-				title="Share your video & audio"
-				description="You can enjoy your games with high quality video and audio streaming"
-			/>
+			<ScrollAnimationWrapper selectedAnimation="blur" my>
+				<Card
+					expand
+					title="Play Any Game"
+					description="Remote Controller works with any game that supports multiple controllers even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest."
+				/>
+			</ScrollAnimationWrapper>
+			<ScrollAnimationWrapper selectedAnimation="blur" my>
+				<Card
+					expand
+					title="Low Latency"
+					description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
+				/>
+			</ScrollAnimationWrapper>
+			<ScrollAnimationWrapper selectedAnimation="blur" my>
+				<Card
+					expand
+					title="P2P Connection"
+					description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
+				/>
+			</ScrollAnimationWrapper>
+			<ScrollAnimationWrapper selectedAnimation="blur" my>
+				<Card
+					expand
+					title="No account required"
+					description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to start playing."
+				/>
+			</ScrollAnimationWrapper>
+			<ScrollAnimationWrapper selectedAnimation="blur" my>
+				<Card
+					expand
+					title="Free and Open Source"
+					description="Remote Controller is free and open source. You can check out the source code on GitHub."
+				/>
+			</ScrollAnimationWrapper>
+			<ScrollAnimationWrapper selectedAnimation="blur" my>
+				<Card
+					expand
+					title="Share your video & audio"
+					description="You can enjoy your games with high quality video and audio streaming"
+				/>
+			</ScrollAnimationWrapper>
 		</article>
 	</div>
 </section>
 
-<section class="flex flex-col w-full px-6 md:px-0 md:flex-row md:gap-4 md:items-center my-12">
+<section
+	class="flex flex-col w-full h-full px-6 md:px-0 md:flex-row md:gap-4 md:items-center my-12"
+>
 	<div class="md:ml-24 md:w-1/3">
 		<h3 class="text-6xl font-black leading-[1.1] text-center capitalize xl:text-left">
 			OS Support
@@ -152,15 +185,17 @@
 			<a class="link link-secondary" href="/client">Try our web client </a>
 		</p>
 
-		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
-			<Card title="Windows" />
-			<Card title="Browser" />
-			<Card title="Linux (Soon)" />
-		</div>
+		<ScrollAnimationWrapper mx selectedAnimation="slide">
+			<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
+				<Card title="Windows" />
+				<Card title="Browser" />
+				<Card title="Linux (Soon)" />
+			</div>
+		</ScrollAnimationWrapper>
 	</div>
 
-	<div class="md:w-2/3 p-4 h-full">
-		<img src="/os-banner.webp" alt="windows OS symbol" class="m-auto w-3/5" />
+	<div class="md:w-2/3 p-4 h-full m-auto">
+		<img src="/os-banner.webp" width="60%" height="60%" alt="windows OS symbol" class="m-auto" />
 	</div>
 </section>
 
@@ -203,7 +238,9 @@
 						</div>
 					</div>
 
-					<a href="/download" class="btn btn-primary btn-lg space-y-4">{@html DownloadSVG} Download APP</a>
+					<a href="/download" class="btn btn-primary btn-lg space-y-4"
+						>{@html DownloadSVG} Download APP</a
+					>
 				</div>
 			</div>
 		</div>

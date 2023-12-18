@@ -43,16 +43,16 @@
 	<slot />
 </main>
 
-<Footer/>
+<Footer />
 
 <div class="indicator fixed bottom-10 right-8">
-<a
-	id="support-us"
-	class=" text-white content-center bg-primary flex px-6 py-4 md:rounded-2xl rounded-full gap-1 font-bold"
-	href="https://ko-fi.com/piterdev"
-	target="_blank"
-	rel="noopener noreferrer"
->
+	<a
+		id="support-us"
+		class=" text-white content-center bg-primary flex px-6 py-4 md:rounded-2xl rounded-full gap-1 font-bold"
+		href="https://ko-fi.com/piterdev"
+		target="_blank"
+		rel="noopener noreferrer"
+	>
 		<span class="indicator-item badge badge-info rounded-full" />
 
 		<span class="md:block hidden">Support us</span>

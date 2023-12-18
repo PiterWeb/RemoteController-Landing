@@ -2,12 +2,17 @@
 	export let title: string;
 	export let description: string | undefined = undefined;
 	export let shadow: boolean = true;
+	export let expand: boolean = false;
 </script>
 
 
 	<section
 		class="bg-white rounded-lg shadow-lg p-6 hover:bg-neutral group transition-colors duration-300"
 		class:drop-shadow={shadow}
+		class:w-full={expand}
+		class:h-full={expand}
+		class:py-auto={expand}
+		class:px-auto={expand}
 	>
 		<h2
 			class="font-bold group-hover:text-white transition-colors duration-300"
