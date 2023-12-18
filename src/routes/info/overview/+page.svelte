@@ -11,7 +11,7 @@
 	const cards: Card[] = [
 		{
 			title: 'Guides',
-			description: 'Learn how to use Remote Controller',
+			description: 'Learn how to install & use Remote Controller',
 			link: '/info/guides'
 		},
 		{
@@ -31,7 +31,7 @@
 	title="Overview"
 	description="Here you can learn more about RemoteController and access guides of use"
 >
-	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-11">
 		{#each cards as { title, description, link }}
 			<a href={link}>
 				<Card {title} {description} shadow={false} />
