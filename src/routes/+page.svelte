@@ -19,7 +19,7 @@
 	<meta name="description" content="Bring Back Afternoon Gaming Sessions" />
 	<meta
 		property="og:title"
-		content="Remote
+		content="
 		🕹
 		Play
 		local
