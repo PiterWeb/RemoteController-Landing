@@ -20,7 +20,6 @@
 	<meta
 		property="og:title"
 		content="Remote
-		Controller
 		🕹
 		Play
 		local

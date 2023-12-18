@@ -1,6 +1,6 @@
 <svelte:head>
 	<title />
-	<meta property="og:title" content="Remote Controller 🕹 Explore" />
+	<meta property="og:title" content="🕹 Explore" />
 	<meta property="og:site_name" content="Remote Controller" />
 	<meta property="og:url" content="https://remote-controller.vercel.app" />
 	<meta property="og:description" content="Explore our resources & guides" />
