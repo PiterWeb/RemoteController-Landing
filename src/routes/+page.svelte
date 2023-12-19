@@ -252,7 +252,7 @@
 						</p>
 
 						<div>
-							<a href="" class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl">
+							<a href="/download" class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl">
 								Free Download
 							</a>
 						</div>
