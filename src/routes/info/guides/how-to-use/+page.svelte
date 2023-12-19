@@ -10,7 +10,8 @@
 		</p>
 
 		<ol class="list-decimal list-inside">
-			<li>
+			...
+			<!-- <li>
 				<h2 class="font-bold text-2xl">Download the desktop app</h2>
 				<p>
 					Download the latest Remote Controller executable for your platform and run it. You will be
@@ -46,7 +47,7 @@
 				<img src="/img/guides/how-to-use/4.png" alt="Desktop app screen" class="my-6" />
 				<p>If everything goes well you will see a screen like this:</p>
 				<img src="/img/guides/how-to-use/5.png" alt="Desktop app screen" class="my-6" />
-			</li>
+			</li> -->
 		</ol>
 	</div>
 </InfoTemplate>
