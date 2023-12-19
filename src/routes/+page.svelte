@@ -2,11 +2,11 @@
 	import ArrowAction from '$lib/components/ArrowAction.svelte';
 	import DownloadSVG from '$lib/assets/download.svg?raw';
 	import GuideSVG from '$lib/assets/guide.svg?raw';
-	import CrossSVG from '$lib/assets/cross.svg?raw';
-	import PlaySVG from '$lib/assets/play.svg?raw';
+
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
 	import ScrollAnimationWrapper from '$lib/components/ScrollAnimationWrapper.svelte';
+	import MainModal from '$lib/components/MainActionModal.svelte';
 
 	function openMainDialog() {
 		const dialog = document.getElementById('main-dialog') as HTMLDialogElement;
@@ -80,7 +80,7 @@
 	id="about-remote-controller"
 	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 md:mx-auto md:3/4 w-11/12"
 >
-	<ScrollAnimationWrapper selectedAnimation="slide">
+	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
 		<TextBlock
 			title="What is Remote Controller?"
 			content="Remote Controller is a free and open source app that lets you play local co-op games online
@@ -89,7 +89,7 @@
 		/>
 	</ScrollAnimationWrapper>
 
-	<ScrollAnimationWrapper selectedAnimation="slide">
+	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
 		<TextBlock
 			title="How does it work?"
 			content="Remote Controller uses a peer-to-peer connection, so you don’t have to worry about your data being
@@ -97,7 +97,7 @@
 		/>
 	</ScrollAnimationWrapper>
 
-	<ScrollAnimationWrapper selectedAnimation="slide">
+	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
 		<TextBlock
 			title="How do I get started?"
 			content="Just follow the steps to download and install the app to start playing."
@@ -186,9 +186,9 @@
 </section>
 
 <section
-	class="flex flex-col w-full h-full px-6 md:px-0 md:flex-row md:gap-4 md:items-center my-12"
+	class="flex flex-col md:w-3/4 mx-auto h-full px-6 md:px-0 md:flex-row md:items-center mt-12"
 >
-	<div class="md:ml-24 md:w-1/3">
+	<div class="md:w-2/4 h-full">
 		<h3 class="text-6xl font-black leading-[1.1] text-center capitalize xl:text-left">
 			OS Support
 		</h3>
@@ -203,86 +203,74 @@
 			<a class="link link-secondary" href="/client">Try our web client </a>
 		</p>
 
-		<ScrollAnimationWrapper mx selectedAnimation="slide">
-			<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
-				<Card title="Windows" />
-				<Card title="Browser" />
-				<Card title="Linux (Soon)" />
-			</div>
-		</ScrollAnimationWrapper>
+		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
+			<Card title="Windows" />
+			<Card title="Browser" />
+			<Card title="Linux (Soon)" />
+		</div>
 	</div>
 
-	<div class="md:w-2/3 p-4 h-full m-auto">
-		<img src="/os-banner.webp" width="60%" height="60%" alt="windows OS symbol" class="m-auto" />
+	<div class="md:w-2/3 md:-mr-48 p-4 w-full h-full">
+		<ScrollAnimationWrapper mx my selectedAnimation="scale">
+			<figure>
+				<img
+					src="/iphone.webp"
+					width="60%"
+					height="60%"
+					alt="windows OS symbol"
+					class="w-full"
+				/>
+
+				<figcaption class="m-auto md:w-1/2 w-full text-center lg:-mt-44 -mt-12">
+					Photo by <a
+						href="https://unsplash.com/@thombradley?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+						>Thom Bradley</a
+					>
+					on
+					<a
+						href="https://unsplash.com/photos/white-iphone-5-c-on-white-table-1NZcjdo2hKQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+						>Unsplash</a
+					>
+				</figcaption>
+			</figure>
+		</ScrollAnimationWrapper>
 	</div>
 </section>
 
-<dialog id="main-dialog" class="modal">
-	<div class="modal-box max-w-[75vw] p-0">
-		<div class="md:flex w-full flex-row hidden">
-			<div
-				class="grid flex-grow h-[75vh] w-1/3 card bg-neutral text-neutral-content rounded-box place-items-center"
-			>
-				<div class="flex flex-col gap-4">
-					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Play in Browser</h3>
+<section class="py-12 md:py-36">
+	<ScrollAnimationWrapper mx my selectedAnimation="blur">
+		<div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
+			<div class="shadow rounded-xl">
+				<div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-neutral rounded-xl">
+					<aside class="p-8 space-y-4 md:p-16">
+						<h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
+							It’s free forever.
+						</h2>
 
-					<p class="text-center px-6">
-						You can play in your browser without installing anything, just go to our client page and
-						share the code with your friends.
-					</p>
-				</div>
+						<p class="font-medium text-blue-100 md:text-2xl">
+							No account, no credit card required.
+						</p>
 
-				<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
-			</div>
-			<div class="flex flex-col flex-grow h-[75vh] w-2/3">
-				<form method="dialog" class="flex flex-row justify-end p-4">
-					<button class="btn btn-ghost btn-sm rounded-full modal-close">
-						{@html CrossSVG}
-					</button>
-				</form>
-				<div class="grid card place-items-center rounded-box h-full">
-					<div class="flex flex-col gap-4">
-						<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Download APP</h3>
-
-						<p>Download the latest version of Remote Controller for your platform.</p>
-					</div>
-
-					<div>
-						<h4 class="text-lg font-bold">Supported Platforms</h4>
-						<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6 w-full">
-							<Card title="Windows" />
-							<Card title="Linux (Soon)" />
-							<Card title="Browser" />
+						<div>
+							<a href="" class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl">
+								Free Download
+							</a>
 						</div>
-					</div>
+					</aside>
 
-					<a href="/download" class="btn btn-primary btn-lg space-y-4"
-						>{@html DownloadSVG} Download APP</a
-					>
+					<aside class="relative hidden md:block">
+						<img
+							class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
+							src="/showcase.jpg"
+							alt="Discover our beautiful panel"
+						/>
+					</aside>
 				</div>
 			</div>
 		</div>
-		<div class="flex w-full flex-col md:hidden">
-			<!-- mobile version -->
-			<div
-				class="grid flex-grow h-[75vh] w-full card bg-neutral text-neutral-content rounded-box place-items-center"
-			>
-				<div class="flex flex-col gap-2">
-					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize px-4">
-						Play in Browser
-					</h3>
+	</ScrollAnimationWrapper>
+</section>
 
-					<p class="text-center px-8">
-						You can play in your browser without installing anything, just go to our client page and
-						share the code with your friends.
-					</p>
-				</div>
-
-				<a href="/client" class="btn btn-primary btn-lg space-y-4">{@html PlaySVG} Go to Client</a>
-			</div>
-		</div>
-	</div>
-	<form method="dialog" class="modal-backdrop">
-		<button>close</button>
-	</form>
+<dialog id="main-dialog" class="modal">
+	<MainModal />
 </dialog>
