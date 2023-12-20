@@ -78,8 +78,9 @@
 <ArrowAction targetId="about-remote-controller" />
 <section
 	id="about-remote-controller"
-	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 md:mx-auto md:3/4 w-11/12"
+	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 mx-auto md:3/4 w-11/12"
 >
+
 	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
 		<TextBlock
 			title="What is Remote Controller?"
@@ -203,7 +204,7 @@
 			<a class="link link-secondary" href="/client">Try our web client </a>
 		</p>
 
-		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6">
+		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6 items-end">
 			<Card title="Windows" />
 			<Card title="Browser" />
 			<Card title="Linux (Soon)" />
