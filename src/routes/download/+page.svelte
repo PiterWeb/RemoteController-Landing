@@ -10,14 +10,14 @@
 
 	const cards: CardType[] = [
 		{
-			title: 'Windows 32 Bits',
-			description: 'Download the latest version of Remote Controller for Windows 32 Bits.',
-			link: 'https://github.com/PiterWeb/RemoteController/releases/latest/download/RemoteController_windows_x64.exe'
+			title: 'Windows ARM',
+			description: 'Download the latest version of Remote Controller for Windows ARM architecture.',
+			link: 'https://github.com/PiterWeb/RemoteController/releases/latest/download/RemoteController-arm64.exe'
 		},
 		{
-			title: 'Windows 64 Bits',
-			description: 'Download the latest version of Remote Controller for Windows 64 Bits.',
-			link: 'https://github.com/PiterWeb/RemoteController/releases/latest/download/RemoteController_windows_x86.exe'
+			title: 'Windows AMD (Most common)',
+			description: 'Download the latest version of Remote Controller for Windows AMD architecture.',
+			link: 'https://github.com/PiterWeb/RemoteController/releases/latest/download/RemoteController-amd64.exe'
 		},
 		{
 			title: 'Linux (Soon)',
