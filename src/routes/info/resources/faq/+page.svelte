@@ -2,7 +2,7 @@
 	import InfoTemplate from '$lib/components/InfoTemplate.svelte';
 </script>
 
-<InfoTemplate title="FAQ" description="Things you may want to know about this software">
+<InfoTemplate title="FAQ" description="Things you may want to know about Remote Controller">
 	<div class="p-6">
 		<ul class="[&>li]:mb-6">
 			<li>
