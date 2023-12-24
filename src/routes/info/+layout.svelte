@@ -1,9 +1,6 @@
 <svelte:head>
-	<title />
-	<meta property="og:title" content="🕹 Explore" />
 	<meta property="og:site_name" content="Remote Controller" />
 	<meta property="og:url" content="https://remote-controller.vercel.app" />
-	<meta property="og:description" content="Explore our resources & guides" />
 	<meta property="og:type" content="product" />
 	<meta property="og:image" content="https://remote-controller.vercel.app/gamepad-aqua.webp" />
 </svelte:head>
