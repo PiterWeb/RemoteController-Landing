@@ -80,7 +80,6 @@
 	id="about-remote-controller"
 	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 mx-auto md:3/4 w-11/12"
 >
-
 	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
 		<TextBlock
 			title="What is Remote Controller?"
@@ -103,6 +102,22 @@
 			title="How do I get started?"
 			content="Just follow the steps to download and install the app to start playing."
 		/>
+	</ScrollAnimationWrapper>
+</section>
+<section>
+	<ScrollAnimationWrapper selectedAnimation="blur">
+		<a
+			href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
+			target="_blank"
+			><img
+				class="mx-auto"
+				src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=431468&theme=dark"
+				alt="Remote&#0032;Controller - Play&#0032;LOCAL&#0032;co&#0045;op&#0032;games&#0032;ONLINE | Product Hunt"
+				style="width: 250px; height: 54px;"
+				width="250"
+				height="54"
+			/></a
+		>
 	</ScrollAnimationWrapper>
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
@@ -214,13 +229,7 @@
 	<div class="md:w-2/3 md:-mr-48 p-4 w-full h-full">
 		<ScrollAnimationWrapper mx my selectedAnimation="scale">
 			<figure>
-				<img
-					src="/iphone.webp"
-					width="60%"
-					height="60%"
-					alt="windows OS symbol"
-					class="w-full"
-				/>
+				<img src="/iphone.webp" width="60%" height="60%" alt="windows OS symbol" class="w-full" />
 
 				<figcaption class="m-auto md:w-1/2 w-full text-center lg:-mt-44 -mt-12">
 					Photo by <a
@@ -253,7 +262,10 @@
 						</p>
 
 						<div>
-							<a href="/download" class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl">
+							<a
+								href="/download"
+								class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl"
+							>
 								Free Download
 							</a>
 						</div>

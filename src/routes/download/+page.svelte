@@ -31,7 +31,7 @@
 			link: 'https://github.com/PiterWeb/RemoteController/archive/refs/tags/release.zip'
 		},
 		{
-			title: 'Browser Client (Still in development)',
+			title: 'Browser Client (No download required)',
 			description:
 				'You can use Remote Controller without installing the desktop client. Just open the browser client and start playing.',
 			link: '/client'
