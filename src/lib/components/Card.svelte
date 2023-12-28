@@ -6,7 +6,7 @@
 </script>
 
 
-	<section
+	<article
 		class="bg-white rounded-lg shadow-lg p-6 hover:bg-neutral group transition-colors duration-300"
 		class:drop-shadow={shadow}
 		class:w-full={expand}
@@ -27,4 +27,4 @@
 				{description}
 			</p>
 		{/if}
-	</section>
+	</article>

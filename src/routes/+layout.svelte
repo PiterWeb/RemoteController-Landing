@@ -22,13 +22,17 @@
 
 <nav class="navbar bg-primary text-primary-content">
 	<div class="flex-1">
-		<h1>
-			<a href="/" class="btn btn-ghost normal-case text-xl items-start content-center">
+		<h2>
+			<a
+				href="/"
+				class="btn btn-ghost normal-case text-xl items-start content-center"
+				aria-label="Go to home page of Remote Controller website"
+			>
 				{@html GamepadSVG}
 
 				<span class="hidden md:block">Remote Controller</span>
 			</a>
-		</h1>
+		</h2>
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal gap-4 px-1 font-bold">
@@ -52,6 +56,7 @@
 		href="https://ko-fi.com/piterdev"
 		target="_blank"
 		rel="noopener noreferrer"
+		aria-label="Support us with Ko-fi donations"
 	>
 		<span class="indicator-item badge badge-info rounded-full" />
 

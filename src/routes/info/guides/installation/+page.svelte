@@ -5,7 +5,7 @@
 </script>
 
 <InfoTemplate title="Installation" description="How to install the RemoteController desktop app">
-	<div class="p-6">
+	<section class="p-6">
 		<p>
 			Remote Controller is easy to install. Just download the latest version for your platform and
 			you are ready to use it.
@@ -16,9 +16,9 @@
 			Download the latest Remote Controller executable</a
 		>
 
-	</div>
+	</section>
 
-	<div class="p-6">
+	<section class="p-6">
 		<h2 class="font-bold text-2xl">Windows</h2>
 		<p>
 			Download the latest Remote Controller executable and run it. You will be asked to install
@@ -26,14 +26,14 @@
 			In the case you don't want to stream your game just click on the cancel button. You can <strong>install
 			ViGEm Bus later</strong> by going to the settings menu on the APP.
 		</p>
-	</div>
+	</section>
 
-	<div class="p-6">
+	<section class="p-6">
 		<h2 class="font-bold text-2xl">Linux</h2>
 		<p>
 			Comming soon...
 		</p>
-	</div>
+	</section>
 
 	<div class="divider"></div>
 

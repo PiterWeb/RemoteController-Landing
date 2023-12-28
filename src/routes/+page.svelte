@@ -42,7 +42,7 @@
 >
 	<section class="md:w-1/3 md:ml-24 flex flex-col justify-evenly">
 		<div>
-			<h2 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
+			<h1 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
 				Play
 				<span
 					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
@@ -54,8 +54,8 @@
 					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
 					>ONLINE</span
 				>
-			</h2>
-			<h3 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h3>
+			</h1>
+			<h2 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h2>
 		</div>
 
 		<div class="flex flex-col gap-4">
@@ -109,6 +109,7 @@
 		<a
 			href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
 			target="_blank"
+			aria-label="View Remote Controller hub on Product Hunt"
 			><img
 				class="mx-auto"
 				src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=431468&theme=dark"
