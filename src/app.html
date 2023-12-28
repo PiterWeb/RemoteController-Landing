@@ -6,6 +6,26 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" href="https://fav.farm/🎮" />
 		%sveltekit.head%
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "SoftwareApplication",
+				"applicationCategory": ["GameApplication", "BrowserApplication"],
+				"name": "Remote Controller",
+				"url": "https://remote-controller.vercel.app/",
+				"operatingSystem": ["Windows", "Mac", "Linux", "Android", "iOS"],
+				"offers": {
+					"@type": "Offer",
+					"price": "0"
+				},
+				"creator": {
+					"@type": "Person",
+					"givenName": "Pedro",
+					"familyName": "Costas Ferradás"
+				},
+				"downloadUrl": "https://remote-controller.vercel.app/download/"
+			}
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
