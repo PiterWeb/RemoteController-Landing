@@ -106,19 +106,32 @@
 </section>
 <section>
 	<ScrollAnimationWrapper selectedAnimation="blur">
-		<a
-			href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
-			target="_blank"
-			aria-label="View Remote Controller hub on Product Hunt"
-			><img
-				class="mx-auto"
-				src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=431468&theme=dark"
-				alt="Remote&#0032;Controller - Play&#0032;LOCAL&#0032;co&#0045;op&#0032;games&#0032;ONLINE | Product Hunt"
-				style="width: 250px; height: 54px;"
-				width="250"
-				height="54"
-			/></a
-		>
+		<script async defer src="/ghbuttons.min.js"></script>
+
+		<div class="flex justify-center items-center gap-8">
+			<a
+				href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
+				target="_blank"
+				aria-label="View Remote Controller hub on Product Hunt"
+				><img
+					src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=431468&theme=dark"
+					alt="Remote&#0032;Controller - Play&#0032;LOCAL&#0032;co&#0045;op&#0032;games&#0032;ONLINE | Product Hunt"
+					style="width: 250px; height: 54px;"
+					width="250"
+					height="54"
+				/></a
+			>
+			<!-- Place this tag where you want the button to render. -->
+			<a
+				class="github-button"
+				href="https://github.com/PiterWeb/RemoteController"
+				data-color-scheme="no-preference: dark; light: dark; dark: dark;"
+				data-icon="octicon-star"
+				data-size="large"
+				data-show-count="true"
+				aria-label="Star PiterWeb/RemoteController on GitHub">STAR US ON Github</a
+			>
+		</div>
 	</ScrollAnimationWrapper>
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
