@@ -105,7 +105,7 @@
 	</ScrollAnimationWrapper>
 </section>
 <section>
-	<ScrollAnimationWrapper selectedAnimation="blur">
+	<div>
 		<script async defer src="/ghbuttons.min.js"></script>
 
 		<div class="flex justify-center items-center gap-8">
@@ -132,7 +132,7 @@
 				aria-label="Star PiterWeb/RemoteController on GitHub">STAR US ON Github</a
 			>
 		</div>
-	</ScrollAnimationWrapper>
+	</div>
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
 	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">How to use</h3>
@@ -241,23 +241,21 @@
 	</div>
 
 	<div class="md:w-2/3 md:-mr-48 p-4 w-full h-full">
-		<ScrollAnimationWrapper mx my selectedAnimation="scale">
-			<figure>
-				<img src="/iphone.webp" width="60%" height="60%" alt="windows OS symbol" class="w-full" />
+		<figure>
+			<img src="/iphone.webp" width="60%" height="60%" alt="windows OS symbol" class="w-full" />
 
-				<figcaption class="m-auto md:w-1/2 w-full text-center lg:-mt-44 -mt-12">
-					Photo by <a
-						href="https://unsplash.com/@thombradley?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-						>Thom Bradley</a
-					>
-					on
-					<a
-						href="https://unsplash.com/photos/white-iphone-5-c-on-white-table-1NZcjdo2hKQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-						>Unsplash</a
-					>
-				</figcaption>
-			</figure>
-		</ScrollAnimationWrapper>
+			<figcaption class="m-auto md:w-1/2 w-full text-center lg:-mt-44 -mt-12">
+				Photo by <a
+					href="https://unsplash.com/@thombradley?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+					>Thom Bradley</a
+				>
+				on
+				<a
+					href="https://unsplash.com/photos/white-iphone-5-c-on-white-table-1NZcjdo2hKQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+					>Unsplash</a
+				>
+			</figcaption>
+		</figure>
 	</div>
 </section>
 
