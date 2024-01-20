@@ -6,6 +6,7 @@
 	<aside>
 		{@html GamepadSVG}
 		<p>Remote Controller.<br />Play LOCAL co-op games ONLINE</p>
+		<h4>Made by <a class="link" href="https://github.com/PiterWeb"> Piterdev </a></h4>
 	</aside>
 	<nav>
 		<header class="footer-title">Product</header>
