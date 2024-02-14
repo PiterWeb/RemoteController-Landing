@@ -21,11 +21,11 @@
 		<a href="https://github.com/PiterWeb/RemoteController" class="link link-hover">Github</a>
 		<a href="mailto:piterzdev@gmail.com" class="link link-hover">Contact</a>
 	</nav>
-	<!-- <nav>
-		<header class="footer-title">Legal</header>
-		<a class="link link-hover">Terms of use</a>
-		<a class="link link-hover">Privacy policy</a>
-	</nav> -->
+	<nav>
+		<header class="footer-title">Development</header>
+		<a href="https://github.com/PiterWeb/RemoteController/blob/main/CONTRIBUTING.md" class="link link-hover">Contribute</a>
+		<a href="https://github.com/PiterWeb/RemoteController/tree/main/docs" class="link link-hover">Docs</a>
+	</nav>
 </footer>
 
 <style>
