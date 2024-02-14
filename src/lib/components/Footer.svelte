@@ -23,9 +23,23 @@
 	</nav>
 	<nav>
 		<header class="footer-title">Development</header>
-		<a href="https://github.com/PiterWeb/RemoteController/blob/main/CONTRIBUTING.md" class="link link-hover">Contribute</a>
-		<a href="https://github.com/PiterWeb/RemoteController/tree/main/docs" class="link link-hover">Docs</a>
+		<a
+			href="https://github.com/PiterWeb/RemoteController/blob/main/CONTRIBUTING.md"
+			class="link link-hover">Contribute</a
+		>
+		<a href="https://github.com/PiterWeb/RemoteController/tree/main/docs" class="link link-hover"
+			>Docs</a
+		>
 	</nav>
+
+	<img
+		decoding="async"
+		loading="eager"
+		src="https://librecounter.org/counter.svg"
+		referrerpolicy="unsafe-url"
+		height="0px"
+		width="0px"
+	/>
 </footer>
 
 <style>
