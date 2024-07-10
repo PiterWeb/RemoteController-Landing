@@ -7,6 +7,8 @@
 	import TextBlock from '$lib/components/TextBlock.svelte';
 	import MainModal from '$lib/components/MainActionModal.svelte';
 
+	import {_} from 'svelte-i18n';
+
 	function openMainDialog() {
 		const dialog = document.getElementById('main-dialog') as HTMLDialogElement;
 		dialog.showModal();
@@ -37,7 +39,7 @@
 </svelte:head>
 
 <div
-	class="lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:items-center md:h-[calc(100vh-3rem-4rem-1rem)] lg:w-2/3 lg:mx-auto lg:px-0 lg:gap-4 px-6 mt-12 w-full flex flex-col h-[calc(100vh-3rem)] "
+	class="md:grid md:grid-cols-3 md:grid-rows-1 md:items-center md:h-[calc(100vh-3rem-4rem-1rem)] lg:w-2/3 md:mx-auto md:px-0 md:gap-4 px-6 mt-12 w-full flex flex-col h-[calc(100vh-3rem)] "
 >
 	<section class="md:max-w-[65ch] md:ml-24 flex flex-col justify-evenly col-span-2">
 		<div>
@@ -70,7 +72,7 @@
 		</div>
 	</section>
 
-	<section class="p-4">
+	<section class="p-4 -z-10">
 		<img src="/gamepad-aqua.webp" alt="gamepad" class="m-auto w-full -rotate-12" />
 	</section>
 </div>
