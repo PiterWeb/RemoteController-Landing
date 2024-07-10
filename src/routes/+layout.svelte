@@ -1,13 +1,15 @@
-<script>
-	import '../app.css';
-	import '../lang/lang'
+<script lang="ts">
+	import '$lib/../app.css';
+	import '$lib/../lang/lang';
 	import GamepadSVG from '$lib/assets/gamepad.svg?raw';
 	import SupportSVG from '$lib/assets/support.svg?raw';
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { onNavigate } from '$app/navigation';
 	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
-	import "flag-icons/css/flag-icons.min.css";
+	import 'flag-icons/css/flag-icons.min.css';
+
+	import { _ } from 'svelte-i18n';
 
 	onNavigate((navigation) => {
 		// @ts-ignore
@@ -41,7 +43,7 @@
 		<ul class="menu menu-horizontal gap-4 px-1 font-bold items-center">
 			<li><a href="/info/guides" class="hover:text-inherit">Guides</a></li>
 			<li><a href="/download" class="hover:text-inherit">Download</a></li>
-			<li class="hidden md:block"><a href="/client" class="hover:text-inherit">Play</a></li>
+			<li class="hidden md:block"><a href="/client" class="hover:text-inherit">{$_('play')}</a></li>
 			<li>
 				<LanguageSelector />
 			</li>
