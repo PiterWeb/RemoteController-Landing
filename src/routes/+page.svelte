@@ -5,7 +5,6 @@
 
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
-	import ScrollAnimationWrapper from '$lib/components/ScrollAnimationWrapper.svelte';
 	import MainModal from '$lib/components/MainActionModal.svelte';
 
 	function openMainDialog() {
@@ -38,9 +37,9 @@
 </svelte:head>
 
 <div
-	class="flex flex-col w-full px-6 md:px-0 mt-12 md:flex-row md:gap-4 h-[calc(100vh-3rem-4rem)] md:h-[calc(100vh-3rem-4rem-1rem)]"
+	class="lg:grid lg:grid-cols-3 lg:grid-rows-1 lg:items-center md:h-[calc(100vh-3rem-4rem-1rem)] lg:w-2/3 lg:mx-auto lg:px-0 lg:gap-4 px-6 mt-12 w-full flex flex-col h-[calc(100vh-3rem)] "
 >
-	<section class="md:w-1/3 md:ml-24 flex flex-col justify-evenly">
+	<section class="md:max-w-[65ch] md:ml-24 flex flex-col justify-evenly col-span-2">
 		<div>
 			<h1 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
 				Play
@@ -59,56 +58,50 @@
 		</div>
 
 		<div class="flex flex-col gap-4">
-			<ScrollAnimationWrapper selectedAnimation="slide">
-				<a href="/info" class="btn btn-lg w-full space-y-4">{@html GuideSVG} Explore Our Guides</a>
-			</ScrollAnimationWrapper>
+			<div class="w-full" id="btn-explore">
+				<a href="/info" class="btn btn-lg w-full">{@html GuideSVG} Explore Our Guides</a>
+			</div>
 
-			<ScrollAnimationWrapper selectedAnimation="slide">
-				<button on:click={openMainDialog} class="btn btn-primary btn-lg w-full space-y-4"
+			<div class="w-full" id="btn-play">
+				<button on:click={openMainDialog} class="btn btn-primary btn-lg w-full"
 					>{@html DownloadSVG} Start Playing</button
 				>
-			</ScrollAnimationWrapper>
+			</div>
 		</div>
 	</section>
 
-	<section class="md:w-2/3 p-4 h-full">
-		<img src="/gamepad-aqua.webp" alt="gamepad" class="m-auto w-3/5 -rotate-12" />
+	<section class="p-4">
+		<img src="/gamepad-aqua.webp" alt="gamepad" class="m-auto w-full -rotate-12" />
 	</section>
 </div>
 <ArrowAction targetId="about-remote-controller" />
 <section
 	id="about-remote-controller"
-	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-8 py-24 mx-auto md:3/4 w-11/12"
+	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-10 pb-24 pt-28 mx-auto w-3/4 reveal-scale"
 >
-	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
-		<TextBlock
-			title="What is Remote Controller?"
-			content="Remote Controller is a free and open source app that lets you play local co-op games online
+	<TextBlock
+		title="What is Remote Controller?"
+		content="Remote Controller is a free and <strong>open source</strong> app that lets you play local co-op games online
 	with your friends, without having to use Steam or any other proprietary gaming online
-	services. It just works, it’s like you’re both playing on the same computer!"
-		/>
-	</ScrollAnimationWrapper>
+	services. <strong>It just works</strong>, it’s like you’re both playing on the same computer!"
+	/>
 
-	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
-		<TextBlock
-			title="How does it work?"
-			content="Remote Controller uses a peer-to-peer connection, so you don’t have to worry about your data being
-	compromised. It also has low latency, so you can play games that require quick reflexes."
-		/>
-	</ScrollAnimationWrapper>
+	<TextBlock
+		title="How does it work?"
+		content="Remote Controller uses a <strong>peer-to-peer connection</strong>, so you don’t have to worry about your data being
+	compromised. It also has <strong>low latency</strong>, so you can play games that require quick reflexes."
+	/>
 
-	<ScrollAnimationWrapper selectedAnimation="slide" placeholderType="text">
-		<TextBlock
-			title="How do I get started?"
-			content="Just follow the steps to download and install the app to start playing."
-		/>
-	</ScrollAnimationWrapper>
+	<TextBlock
+		title="How do I get started?"
+		content="Just <strong>follow the steps</strong> to download and install the app to start playing."
+	/>
 </section>
 <section>
 	<div>
 		<script async defer src="/ghbuttons.min.js"></script>
 
-		<div class="flex justify-center items-center gap-8">
+		<div class="flex-col md:flex-row flex justify-center items-center gap-8">
 			<a
 				href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
 				target="_blank"
@@ -139,29 +132,24 @@
 	<div
 		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
 	>
-		<ScrollAnimationWrapper selectedAnimation="slide">
-			<div class="flex flex-col items-center gap-4">
-				<p class="text-2xl">Connect your gamepad</p>
-				<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
-					<li class="step step-info">Download APP</li>
-					<li data-content="1" class="step step-info">Use Browser Client</li>
-					<li data-content="2" class="step step-primary">Share Codes</li>
-					<li data-content="3" class="step step-primary">Play</li>
-				</ul>
-			</div>
-		</ScrollAnimationWrapper>
-
-		<ScrollAnimationWrapper selectedAnimation="slide">
-			<div class="flex flex-col items-center gap-4">
-				<p class="text-2xl">Stream your videogame</p>
-				<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
-					<li class="step step-primary">Install Drivers</li>
-					<li class="step step-primary">Download APP</li>
-					<li class="step step-primary">Share Codes</li>
-					<li class="step step-primary">Play</li>
-				</ul>
-			</div>
-		</ScrollAnimationWrapper>
+		<div class="flex flex-col items-center gap-4">
+			<p class="text-2xl">Connect your gamepad</p>
+			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
+				<li class="step step-info">Download APP</li>
+				<li data-content="1" class="step step-info">Use Browser Client</li>
+				<li data-content="2" class="step step-primary">Share Codes</li>
+				<li data-content="3" class="step step-primary">Play</li>
+			</ul>
+		</div>
+		<div class="flex flex-col items-center gap-4">
+			<p class="text-2xl">Stream your videogame</p>
+			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
+				<li class="step step-primary">Install Drivers</li>
+				<li class="step step-primary">Download APP</li>
+				<li class="step step-primary">Share Codes</li>
+				<li class="step step-primary">Play</li>
+			</ul>
+		</div>
 	</div>
 </section>
 
@@ -169,48 +157,48 @@
 	<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Features</h3>
 	<div class="mt-24 mb-24 md:mx-auto md:w-3/4 w-11/12">
 		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-12 md:ml-0 gap-6">
-			<ScrollAnimationWrapper selectedAnimation="blur" my>
+			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title="Play Any Game"
-					description="Remote Controller works with any game that supports multiple controllers even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest."
+					description="Remote Controller works with <strong>any game that supports controllers</strong> even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest."
 				/>
-			</ScrollAnimationWrapper>
-			<ScrollAnimationWrapper selectedAnimation="blur" my>
+			</div>
+			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title="Low Latency"
 					description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
 				/>
-			</ScrollAnimationWrapper>
-			<ScrollAnimationWrapper selectedAnimation="blur" my>
+			</div>
+			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title="P2P Connection"
 					description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
 				/>
-			</ScrollAnimationWrapper>
-			<ScrollAnimationWrapper selectedAnimation="blur" my>
+			</div>
+			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title="No account required"
-					description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to start playing."
+					description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to <strong>start playing</strong>."
 				/>
-			</ScrollAnimationWrapper>
-			<ScrollAnimationWrapper selectedAnimation="blur" my>
+			</div>
+			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title="Free and Open Source"
-					description="Remote Controller is free and open source. You can check out the source code on GitHub."
+					description="Remote Controller is free and open source. You can <strong>check out the source code</strong> on GitHub."
 				/>
-			</ScrollAnimationWrapper>
-			<ScrollAnimationWrapper selectedAnimation="blur" my>
+			</div>
+			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title="Share your video & audio"
-					description="You can enjoy your games with high quality video and audio streaming"
+					description="You can enjoy your games with <strong>high quality video and audio streaming</strong>"
 				/>
-			</ScrollAnimationWrapper>
+			</div>
 		</article>
 	</div>
 </section>
@@ -224,7 +212,7 @@
 		</h3>
 
 		<p class="mt-8 text-xl">
-			We got you covered! Remote Controller supports Windows, and Linux (Soon).
+			We got you covered! Remote Controller supports <strong>Windows</strong>, and Linux (Soon).
 		</p>
 		<p class="mt-8 text-xl">
 			Also we have a browser client for those who don't want to install anything, it works in almost
@@ -240,7 +228,7 @@
 		</div>
 	</div>
 
-	<div class="md:w-2/3 md:-mr-48 p-4 w-full h-full">
+	<div class="md:w-2/3 md:-mr-48 p-4 w-full h-full reveal-scale">
 		<figure>
 			<img src="/iphone.webp" width="60%" height="60%" alt="windows OS symbol" class="w-full" />
 
@@ -260,13 +248,13 @@
 </section>
 
 <section class="py-12 md:py-36">
-	<ScrollAnimationWrapper mx my selectedAnimation="blur">
+	<div class="my-auto mx-auto reveal-fade">
 		<div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
 			<div class="shadow rounded-xl">
 				<div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-neutral rounded-xl">
 					<aside class="p-8 space-y-4 md:p-16">
 						<h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
-							It’s free forever.
+							It’s <strong>free forever</strong>.
 						</h2>
 
 						<p class="font-medium text-blue-100 md:text-2xl">
@@ -293,9 +281,25 @@
 				</div>
 			</div>
 		</div>
-	</ScrollAnimationWrapper>
+	</div>
 </section>
 
 <dialog id="main-dialog" class="modal">
 	<MainModal />
 </dialog>
+
+<style>
+
+	#btn-explore,
+	#btn-play {
+		opacity: 0;
+		animation-name: reveal-slide;
+		animation-duration: 0.5s;
+		animation-fill-mode: forwards;
+	}
+
+	#btn-play {
+		animation-delay: 0.25s;
+	}
+
+</style>

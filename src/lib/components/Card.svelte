@@ -24,7 +24,7 @@
 		</h2>
 		{#if description}
 			<p class="text-gray-600 group-hover:text-gray-400 transition-colors duration-300">
-				{description}
+				{@html description}
 			</p>
 		{/if}
 	</article>

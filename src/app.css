@@ -47,3 +47,89 @@
 html {
 	scroll-behavior: smooth;
 }
+
+@keyframes reveal-scale {
+	from {
+		scale: 0.5;
+	}
+	to {
+		scale: 1;
+	}
+}
+
+.reveal-scale {
+	will-change: scroll-position;
+	view-timeline-name: --revealing-scale;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: ease-in reveal-scale both;
+	animation-timeline: --revealing-scale;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 30% cover 50%;
+}
+
+@keyframes reveal-fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+.reveal-fade {
+	will-change: scroll-position;
+	view-timeline-name: --revealing-fade;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: ease-out reveal-fade both;
+	animation-timeline: --revealing-fade;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@keyframes reveal-slide {
+	from {
+		transform: translateY(100%);
+		opacity: 0;
+		scale: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+.reveal-slide {
+	will-change: scroll-position;
+	view-timeline-name: --revealing-fade;
+	view-timeline-axis: block;
+
+	/* Attach animation, linked to the  View Timeline */
+	animation: ease-out reveal-slide both;
+	animation-timeline: --revealing-fade;
+
+	/* Tweak range when effect should run*/
+	animation-range: entry 25% cover 50%;
+}
+
+@media (width <= 640px) {
+	.reveal-scale {
+		animation: none !important;
+	}
+}
+
+@media (prefers-reduced-motion) {
+	.reveal-scale,
+	.reveal-fade,
+	.reveal-slide {
+		animation: none !important;
+	}
+}

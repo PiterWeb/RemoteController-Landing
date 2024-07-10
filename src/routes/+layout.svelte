@@ -1,10 +1,13 @@
 <script>
 	import '../app.css';
+	import '../lang/lang'
 	import GamepadSVG from '$lib/assets/gamepad.svg?raw';
 	import SupportSVG from '$lib/assets/support.svg?raw';
 	import Footer from '$lib/components/Footer.svelte';
 
 	import { onNavigate } from '$app/navigation';
+	import LanguageSelector from '$lib/components/LanguageSelector.svelte';
+	import "flag-icons/css/flag-icons.min.css";
 
 	onNavigate((navigation) => {
 		// @ts-ignore
@@ -35,10 +38,13 @@
 		</h2>
 	</div>
 	<div class="flex-none">
-		<ul class="menu menu-horizontal gap-4 px-1 font-bold">
+		<ul class="menu menu-horizontal gap-4 px-1 font-bold items-center">
 			<li><a href="/info/guides" class="hover:text-inherit">Guides</a></li>
 			<li><a href="/download" class="hover:text-inherit">Download</a></li>
-			<li><a href="/client" class="hover:text-inherit">Play</a></li>
+			<li class="hidden md:block"><a href="/client" class="hover:text-inherit">Play</a></li>
+			<li>
+				<LanguageSelector />
+			</li>
 		</ul>
 	</div>
 </nav>
