@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { locale, locales } from 'svelte-i18n';
 	import { _ } from 'svelte-i18n';
-	import type { ChangeEventHandler } from 'svelte/elements';
 	import { get } from 'svelte/store';
 
 	function getLocaleName(locale: string) {
