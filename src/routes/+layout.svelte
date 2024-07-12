@@ -41,9 +41,9 @@
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal gap-4 px-1 font-bold items-center">
-			<li><a href="/info/guides" class="hover:text-inherit">Guides</a></li>
-			<li><a href="/download" class="hover:text-inherit">Download</a></li>
-			<li class="hidden md:block"><a href="/client" class="hover:text-inherit">{$_('play')}</a></li>
+			<li><a href="/info/guides" class="hover:text-inherit">{$_('layout.guides')}</a></li>
+			<li><a href="/download" class="hover:text-inherit">{$_('layout.download')}</a></li>
+			<li class="hidden md:block"><a href="/client" class="hover:text-inherit">{$_('layout.play')}</a></li>
 			<li>
 				<LanguageSelector />
 			</li>
@@ -64,11 +64,11 @@
 		href="https://ko-fi.com/piterdev"
 		target="_blank"
 		rel="noopener noreferrer"
-		aria-label="Support us with Ko-fi donations"
+		aria-label={$_('layout.support-us-with-ko-fi-donations')}
 	>
 		<span class="indicator-item badge badge-info rounded-full" />
 
-		<span class="md:block hidden">Support us</span>
+		<span class="md:block hidden">{$_('layout.support_us')}</span>
 		{@html SupportSVG}
 	</a>
 </div>

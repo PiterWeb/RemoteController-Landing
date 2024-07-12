@@ -1,3 +1,19 @@
 {
-  "play": "Xogar"
+  "layout": {
+    "guides": "Guías",
+    "download": "Descargar",
+    "support_us": "Axúdenos",
+    "play": "Xogar",
+    "support-us-with-ko-fi-donations": "Axudanos con donacións en Ko-fi"
+  },
+  "index": {
+    "title": {},
+    "subtitle": "Votas en falta as tardes de xogos coperativos?"
+  },
+  "btns": {
+    "explore-our-guides": "Explora as guías"
+  },
+  "btn": {
+    "start-playing": "Comezar a xogar"
+  }
 }

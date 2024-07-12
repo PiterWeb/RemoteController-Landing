@@ -7,7 +7,7 @@
 	import TextBlock from '$lib/components/TextBlock.svelte';
 	import MainModal from '$lib/components/MainActionModal.svelte';
 
-	import {_} from 'svelte-i18n';
+	import { _ } from 'svelte-i18n';
 
 	function openMainDialog() {
 		const dialog = document.getElementById('main-dialog') as HTMLDialogElement;
@@ -39,7 +39,7 @@
 </svelte:head>
 
 <div
-	class="md:grid md:grid-cols-3 md:grid-rows-1 md:items-center md:h-[calc(100vh-3rem-4rem-1rem)] lg:w-2/3 md:mx-auto md:px-0 md:gap-4 px-6 mt-12 w-full flex flex-col h-[calc(100vh-3rem)] "
+	class="md:grid md:grid-cols-3 md:grid-rows-1 md:items-center md:h-[calc(100vh-3rem-4rem-1rem)] lg:w-2/3 md:mx-auto md:px-0 md:gap-4 px-6 mt-12 w-full flex flex-col h-[calc(100vh-3rem)]"
 >
 	<section class="md:max-w-[65ch] md:ml-24 flex flex-col justify-evenly col-span-2">
 		<div>
@@ -47,26 +47,30 @@
 				Play
 				<span
 					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
-					>LOCAL</span
+				>
+					LOCAL</span
 				>
 
 				co-op games
 				<span
 					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
-					>ONLINE</span
 				>
+					ONLINE
+				</span>
 			</h1>
-			<h2 class="text-2xl font-bold my-4">Do you miss the evenings of cooperative games ?</h2>
+			<h2 class="text-2xl font-bold my-4">
+				{$_('index.subtitle')}
+			</h2>
 		</div>
 
 		<div class="flex flex-col gap-4">
 			<div class="w-full" id="btn-explore">
-				<a href="/info" class="btn btn-lg w-full">{@html GuideSVG} Explore Our Guides</a>
+				<a href="/info" class="btn btn-lg w-full">{@html GuideSVG} {$_('btns.explore-our-guides')}</a>
 			</div>
 
 			<div class="w-full" id="btn-play">
 				<button on:click={openMainDialog} class="btn btn-primary btn-lg w-full"
-					>{@html DownloadSVG} Start Playing</button
+					>{@html DownloadSVG} {$_('btn.start-playing')}</button
 				>
 			</div>
 		</div>
@@ -291,7 +295,6 @@
 </dialog>
 
 <style>
-
 	#btn-explore,
 	#btn-play {
 		opacity: 0;
@@ -303,5 +306,4 @@
 	#btn-play {
 		animation-delay: 0.25s;
 	}
-
 </style>

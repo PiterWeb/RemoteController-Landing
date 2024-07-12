@@ -1,3 +1,19 @@
 {
-  "play": "Play"
+  "layout": {
+    "guides": "Guides",
+    "download": "Download",
+    "support_us": "Support us",
+    "play": "Play",
+    "support-us-with-ko-fi-donations": "Support us with Ko-fi donations"
+  },
+  "index": {
+    "subtitle": "Do you miss the evenings of cooperative games?",
+    "title": {}
+  },
+  "btns": {
+    "explore-our-guides": "Explore Our Guides"
+  },
+  "btn": {
+    "start-playing": "Start Playing"
+  }
 }

@@ -1,3 +1,19 @@
 {
-  "play": "Jugar"
+  "layout": {
+    "guides": "Guías",
+    "download": "Descargar",
+    "support_us": "Ayúdenos",
+    "play": "Jugar",
+    "support-us-with-ko-fi-donations": "Ayudanos con donaciones en Ko-fi"
+  },
+  "index": {
+    "subtitle": "¿Echas de menos las tardes de juegos coperativos?",
+    "title": {}
+  },
+  "btns": {
+    "explore-our-guides": "Explora las guías"
+  },
+  "btn": {
+    "start-playing": "Empezar a jugar"
+  }
 }

@@ -33,6 +33,7 @@
 	</nav>
 
 	<img
+		alt="Analytics by LibreCounter"
 		decoding="async"
 		loading="eager"
 		src="https://librecounter.org/counter.svg"

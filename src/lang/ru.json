@@ -1,3 +1,18 @@
 {
-  "play": "Играть"
+  "layout": {
+    "guides": "Гид",
+    "download": "Загрузите",
+    "support_us": "Поддержите нас",
+    "play": "Играть",
+    "support-us-with-ko-fi-donations": "Поддержите нас пожертвованиями Ko-fi"
+  },
+  "index": {
+    "subtitle": "Вы скучаете по вечерам совместных игр?"
+  },
+  "btns": {
+    "explore-our-guides": "Ознакомьтесь с нашими путеводителями"
+  },
+  "btn": {
+    "start-playing": "Начинайте играть"
+  }
 }
