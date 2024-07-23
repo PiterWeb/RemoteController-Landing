@@ -15,5 +15,12 @@
   },
   "btn": {
     "start-playing": "Start Playing"
-  }
+  },
+  "what-is-remote-controller": "What is Remote Controller?",
+  "remote-controller-is-a-free-and-open-source-app-that-lets-you-play-local-co-op-games-online-with-your-friends-without-having-to-use-steam-or-any-other-proprietary-gaming-online-services-it-just-works-its-like-youre-both-playing-on-the-same-computer": "Remote Controller is a free and <strong>open source</strong> app that lets you play local co-op games online with your friends, without having to use Steam or any other proprietary gaming online services. <strong>It just works</strong>, it’s like you’re both playing on the same computer!",
+  "what-is-remote-controller-content": "Remote Controller is a free and <strong>open source</strong> app that lets you play local co-op games online with your friends, without having to use Steam or any other proprietary gaming online services. <strong>It just works</strong>, it’s like you’re both playing on the same computer!",
+  "how-does-it-work": "How does it work?",
+  "how-does-it-work-content": "Remote Controller uses a <strong>peer-to-peer connection</strong>, so you don’t have to worry about your data being compromised. It also has <strong>low latency</strong>, so you can play games that require quick reflexes.",
+  "how-do-i-get-started": "How do I get started?",
+  "how-do-i-get-started-content": "Just <strong>follow the steps</strong> of the guides to download and install the app to start playing. But the App itself also has interactive tutorials"
 }

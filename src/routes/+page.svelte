@@ -86,21 +86,18 @@
 	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-10 pb-24 pt-28 mx-auto w-3/4 reveal-scale"
 >
 	<TextBlock
-		title="What is Remote Controller?"
-		content="Remote Controller is a free and <strong>open source</strong> app that lets you play local co-op games online
-	with your friends, without having to use Steam or any other proprietary gaming online
-	services. <strong>It just works</strong>, it’s like you’re both playing on the same computer!"
+		title={$_('what-is-remote-controller')}
+		content={$_('what-is-remote-controller-content')}
 	/>
 
 	<TextBlock
-		title="How does it work?"
-		content="Remote Controller uses a <strong>peer-to-peer connection</strong>, so you don’t have to worry about your data being
-	compromised. It also has <strong>low latency</strong>, so you can play games that require quick reflexes."
+		title={$_('how-does-it-work')}
+		content={$_('how-does-it-work-content')}
 	/>
 
 	<TextBlock
-		title="How do I get started?"
-		content="Just <strong>follow the steps</strong> to download and install the app to start playing."
+		title={$_('how-do-i-get-started')}
+		content={$_('how-do-i-get-started-content')}
 	/>
 </section>
 <section>
