@@ -14,5 +14,10 @@
   },
   "btn": {
     "start-playing": "Начинайте играть"
-  }
+  },
+  "head": {
+    "title-secondary": "Играйте в местные кооперативные онлайн-игры со своими ДРУЗЬЯМИ",
+    "description": "Верните послеобеденные игровые сессии"
+  },
+  "what-is-remote-controller": "Что такое Remote Controller?"
 }
