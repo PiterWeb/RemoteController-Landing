@@ -151,35 +151,35 @@
 				<Card
 					expand
 					title={$_('feature.low-latency')}
-					description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
+					description={$_('feature.low-latency-content')}
 				/>
 			</div>
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
 					title={$_('feature.p2p-connection')}
-					description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
+					description={$_('feature.p2p-connection-content')}
 				/>
 			</div>
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
-					title="No account required"
-					description="You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to <strong>start playing</strong>."
+					title={$_('feature.no-account-required')}
+					description={$_('feature.no-account-required-content')}
 				/>
 			</div>
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
-					title="Free and Open Source"
-					description="Remote Controller is free and open source. You can <strong>check out the source code</strong> on GitHub."
+					title={$_('feature.free-and-open-source')}
+					description={$_('feature.free-and-open-source-content')}
 				/>
 			</div>
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
-					title="Share your video & audio"
-					description="You can enjoy your games with <strong>high quality video and audio streaming</strong>"
+					title={$_('feature.share-your-video-and-audio')}
+					description={$_('feature.share-your-video-and-audio-content')}
 				/>
 			</div>
 		</article>

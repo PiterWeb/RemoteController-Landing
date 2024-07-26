@@ -34,6 +34,14 @@
     "low-latency": "Low Latency",
     "play-any-game": "Play Any Game",
     "play-any-game-content": "Remote Controller works with <strong>any game that supports controllers</strong> even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest.",
-    "p2p-connection": "P2P Connection"
+    "p2p-connection": "P2P Connection",
+    "low-latency-content": "Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes.",
+    "p2p-connection-content": "We use a peer-to-peer connection, so you don’t have to worry about your data being compromised.",
+    "no-account-required": "No account required",
+    "no-account-required-content": "You don’t need to create an account to use Remote Controller. Just follow the steps to download and install the app to <strong>start playing</strong>.",
+    "free-and-open-source": "Free and Open Source",
+    "share-your-video-and-audio": "Share your video & audio",
+    "free-and-open-source-content": "Remote Controller is free and open source. You can <strong>check out the source code</strong> on GitHub.",
+    "share-your-video-and-audio-content": "You can enjoy your games with <strong>high quality video and audio streaming</strong>"
   }
 }

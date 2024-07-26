@@ -32,6 +32,15 @@
   "feature": {
     "low-latency": "Baixa Latencia",
     "play-any-game": "Xoga Calquer Videoxogo",
-    "play-any-game-content": "Remote Controller funciona con <strong>calquer xogo que admite mandos</strong> incluso se non ten DRM. \nSimplemente inicia o xogo e Remote Controller se encargará do resto"
+    "play-any-game-content": "Remote Controller funciona con <strong>calquer xogo que admite mandos</strong> incluso se non ten DRM. \nSimplemente inicia o xogo e Remote Controller se encargará do resto",
+    "low-latency-content": "Grazas as conexións de extremo a extremo, Remote Controller ten unha baixa latencia, así podes xogar videoxogos que requiran reflexos rápidos",
+    "p2p-connection": "Conexións EaE",
+    "p2p-connection-content": "Usamos conexións de extremo a extremo, así non te tes que preocupar de que os teus datos sexan comprometidos.",
+    "no-account-required": "Sen contas",
+    "no-account-required-content": "Non necesitas crear unha conta para usar Remote Controller. So segue os pasos para baixar e instalar a aplicación para <strong> comezar a xogar </strong>",
+    "free-and-open-source": "Grátis e de Código Aberto",
+    "share-your-video-and-audio": "Comparte o teu vídeo e audio",
+    "free-and-open-source-content": "Remote Controller é gratuito e de código aberto. Podes <strong>ver o código fonte</strong> en Github.",
+    "share-your-video-and-audio-content": "Podes desfrutar dos videoxogos con unha <strong>alta calidade de vídeo e audio en streaming</strong>"
   }
 }
