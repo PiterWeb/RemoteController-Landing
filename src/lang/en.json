@@ -26,5 +26,14 @@
   "head": {
     "title-secondary": "Play local co-op games online with your FRIENDS",
     "description": "Bring Back Afternoon Gaming Sessions"
+  },
+  "star-us-on-github": "STAR US ON Github",
+  "features": "Features",
+  "how-to-use": "How to use",
+  "feature": {
+    "low-latency": "Low Latency",
+    "play-any-game": "Play Any Game",
+    "play-any-game-content": "Remote Controller works with <strong>any game that supports controllers</strong> even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest.",
+    "p2p-connection": "P2P Connection"
   }
 }

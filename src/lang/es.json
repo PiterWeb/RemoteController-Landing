@@ -25,5 +25,13 @@
     "title-secondary": "Juega videojuegos cooperativos locales en linea con tus amigos",
     "description": "Trae de vuelta las tardes de juegos cooperativos"
   },
-  "how-do-i-get-started-content": "Simplemente <strong>sigue los pasos</strong> de las guias disponibles para descargar e instalar la app para empezar a jugar. La app ya incluye <strong>tutoriales interactivos</strong> de uso"
+  "how-do-i-get-started-content": "Simplemente <strong>sigue los pasos</strong> de las guias disponibles para descargar e instalar la app para empezar a jugar. La app ya incluye <strong>tutoriales interactivos</strong> de uso",
+  "star-us-on-github": "DANOS TU ESTRELLA en Github",
+  "features": "Características",
+  "how-to-use": "Como usar",
+  "feature": {
+    "low-latency": "Baja Latencia",
+    "play-any-game": "Juego Cualquier Videojuego",
+    "play-any-game-content": "Remote Controller funciona con <strong>cualquier juego que admita mando</strong> incluso si no tiene DRM. \nSimplemente inicia el juego y Remote Controller se encargará del resto."
+  }
 }

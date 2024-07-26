@@ -25,5 +25,13 @@
   "head": {
     "title-secondary": "Xoga videoxogos cooperativos localis en liña cos teus amigos",
     "description": "Trae de volta as tardes de xogos cooperativos"
+  },
+  "star-us-on-github": "DANOS A TUA ESTRELA en Github",
+  "features": "Características",
+  "how-to-use": "Como usar",
+  "feature": {
+    "low-latency": "Baixa Latencia",
+    "play-any-game": "Xoga Calquer Videoxogo",
+    "play-any-game-content": "Remote Controller funciona con <strong>calquer xogo que admite mandos</strong> incluso se non ten DRM. \nSimplemente inicia o xogo e Remote Controller se encargará do resto"
   }
 }

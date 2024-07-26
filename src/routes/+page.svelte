@@ -2,6 +2,7 @@
 	import ArrowAction from '$lib/components/ArrowAction.svelte';
 	import DownloadSVG from '$lib/assets/download.svg?raw';
 	import GuideSVG from '$lib/assets/guide.svg?raw';
+	import Star from '$lib/assets/star.svelte';
 
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
@@ -18,10 +19,7 @@
 <svelte:head>
 	<title>Remote Controller 🕹 {$_('head.title-secondary')}</title>
 	<meta name="description" content={$_('head.description')} />
-	<meta
-		property="og:title"
-		content={"🕹" + $_('head.title-secondary')}
-	/>
+	<meta property="og:title" content={'🕹' + $_('head.title-secondary')} />
 	<meta property="og:site_name" content="Remote Controller" />
 	<meta property="og:url" content="https://remote-controller.vercel.app" />
 	<meta property="og:description" content={$_('head.description')} />
@@ -56,7 +54,9 @@
 
 		<div class="flex flex-col gap-4">
 			<div class="w-full" id="btn-explore">
-				<a href="/info" class="btn btn-lg w-full">{@html GuideSVG} {$_('btns.explore-our-guides')}</a>
+				<a href="/info" class="btn btn-lg w-full"
+					>{@html GuideSVG} {$_('btns.explore-our-guides')}</a
+				>
 			</div>
 
 			<div class="w-full" id="btn-play">
@@ -81,20 +81,12 @@
 		content={$_('what-is-remote-controller-content')}
 	/>
 
-	<TextBlock
-		title={$_('how-does-it-work')}
-		content={$_('how-does-it-work-content')}
-	/>
+	<TextBlock title={$_('how-does-it-work')} content={$_('how-does-it-work-content')} />
 
-	<TextBlock
-		title={$_('how-do-i-get-started')}
-		content={$_('how-do-i-get-started-content')}
-	/>
+	<TextBlock title={$_('how-do-i-get-started')} content={$_('how-do-i-get-started-content')} />
 </section>
 <section>
 	<div>
-		<script async defer src="/ghbuttons.min.js"></script>
-
 		<div class="flex-col md:flex-row flex justify-center items-center gap-8">
 			<a
 				href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
@@ -108,21 +100,18 @@
 					height="54"
 				/></a
 			>
-			<!-- Place this tag where you want the button to render. -->
 			<a
-				class="github-button"
 				href="https://github.com/PiterWeb/RemoteController"
-				data-color-scheme="no-preference: dark; light: dark; dark: dark;"
-				data-icon="octicon-star"
-				data-size="large"
-				data-show-count="true"
-				aria-label="Star PiterWeb/RemoteController on GitHub">STAR US ON Github</a
+				aria-label={$_('star-us-on-github')}
+				class="group flex flex-row items-center gap-4 font-semibold  w-64 h-14 border-gray-400 border-2 rounded-lg p-4"
+			>
+				<Star /> {$_('star-us-on-github')}</a
 			>
 		</div>
 	</div>
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
-	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">How to use</h3>
+	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">{$_('how-to-use')}</h3>
 	<div
 		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
 	>
@@ -148,27 +137,27 @@
 </section>
 
 <section class="w-full py-12">
-	<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Features</h3>
+	<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">{$_('features')}</h3>
 	<div class="mt-24 mb-24 md:mx-auto md:w-3/4 w-11/12">
 		<article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 ml-12 md:ml-0 gap-6">
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
-					title="Play Any Game"
-					description="Remote Controller works with <strong>any game that supports controllers</strong> even if it's DRM Free. Just launch the game, and Remote Controller will take care of the rest."
+					title={$_('feature.play-any-game')}
+					description={$_('feature.play-any-game-content')}
 				/>
 			</div>
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
-					title="Low Latency"
+					title={$_('feature.low-latency')}
 					description="Thanks to the peer-to-peer connection, Remote Controller has low latency, so you can play games that require quick reflexes."
 				/>
 			</div>
 			<div class="my-auto reveal-fade">
 				<Card
 					expand
-					title="P2P Connection"
+					title={$_('feature.p2p-connection')}
 					description="We use a peer-to-peer connection, so you don’t have to worry about your data being compromised."
 				/>
 			</div>
@@ -224,7 +213,7 @@
 
 	<div class="md:w-2/3 md:-mr-48 p-4 w-full h-full reveal-scale">
 		<figure>
-			<img src="/iphone.webp" width="60%" height="60%" alt="windows OS symbol" class="w-full" />
+			<img src="/iphone.webp" width="100%" height="100%" alt="iphone exposed" class="w-full" />
 
 			<figcaption class="m-auto md:w-1/2 w-full text-center lg:-mt-44 -mt-12">
 				Photo by <a
