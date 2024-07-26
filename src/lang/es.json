@@ -21,5 +21,9 @@
   "how-does-it-work": "¿ Cómo funciona ?",
   "how-does-it-work-content": "Remote Controller usa una <strong>conexión extremo a extremo</strong>, así no te tienes que preocupar de que tus datos sean expuestos. Tiene <strong>latencia baja</strong>, por lo que puedes jugar videojuegos que requieran de reflejos rápidos.",
   "how-do-i-get-started": "¿ Como empiezo a usarlo ?",
+  "head": {
+    "title-secondary": "Juega videojuegos cooperativos locales en linea con tus amigos",
+    "description": "Trae de vuelta las tardes de juegos cooperativos"
+  },
   "how-do-i-get-started-content": "Simplemente <strong>sigue los pasos</strong> de las guias disponibles para descargar e instalar la app para empezar a jugar. La app ya incluye <strong>tutoriales interactivos</strong> de uso"
 }

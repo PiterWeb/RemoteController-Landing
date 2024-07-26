@@ -20,6 +20,10 @@
   "how-does-it-work": "Cómo funciona ?",
   "what-is-remote-controller-content": "Remote Controller é unha aplicativo/web gratuita e de <strong>código aberto</strong> que permite xogar videoxogos con cooperativo local en liña. Non necesitas Steam ou outro servicio online propietario. <strong>Simplemente funciona</strong>, é coma se ambos os 2 estiveseis xogando no mesmo ordenador",
   "how-does-it-work-content": "Remote Controller usa unha <strong>conexión extremo a extremo</strong>, así non te tes que preocupar de que os teus datos sexan expostos. Ten <strong>baixa latencia</strong>, polo que podes xogar videoxogos que requiran de reflexos rápidos.",
+  "how-do-i-get-started-content": "Simplemente <strong>sigue os pasos</strong> das guias disponibles para baixar e instalar o aplicativo para comezar a xogar. O aplicativo xa inclue <strong>titorias interactivos</strong> de uso",
   "how-do-i-get-started": "Cómo comezo a usalo ?",
-  "how-do-i-get-started-content": "Simplemente <strong>sigue os pasos</strong> das guias disponibles para baixar e instalar o aplicativo para comezar a xogar. O aplicativo xa inclue <strong>titorias interactivos</strong> de uso"
+  "head": {
+    "title-secondary": "Xoga videoxogos cooperativos localis en liña cos teus amigos",
+    "description": "Trae de volta as tardes de xogos cooperativos"
+  }
 }
