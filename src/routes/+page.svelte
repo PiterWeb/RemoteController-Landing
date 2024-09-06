@@ -111,7 +111,7 @@
 	</div>
 </section>
 <section class="grid justify-center py-12">
-	<a class="group max-w-lg p-6 rounded-lg shadow bg-white border-orange-600 border-2" href={$_('gamelinksafe-url')}>
+	<a class="group md:w-[32rem] w-2/3 mx-auto p-6 rounded-lg shadow bg-white border-orange-600 border-2" href={$_('gamelinksafe-url')}>
 		<header class="flex gap-4">
 			<img class="w-7 h-7 group-hover:scale-150 transition-all duration-300" alt="gamelinksafe logo" src="/gamelinksafe-icon.jpg"/>
 				<h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
