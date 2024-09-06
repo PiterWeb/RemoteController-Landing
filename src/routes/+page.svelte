@@ -103,12 +103,46 @@
 			<a
 				href="https://github.com/PiterWeb/RemoteController"
 				aria-label={$_('star-us-on-github')}
-				class="group flex flex-row items-center gap-4 font-semibold  w-64 h-14 border-gray-400 border-2 rounded-lg p-4"
+				class="group flex flex-row items-center gap-4 font-semibold w-64 h-14 border-gray-400 border-2 rounded-lg p-4"
 			>
 				<Star /> {$_('star-us-on-github')}</a
 			>
 		</div>
 	</div>
+</section>
+<section class="grid justify-center py-12">
+	<a class="group max-w-lg p-6 rounded-lg shadow bg-white border-orange-600 border-2" href={$_('gamelinksafe-url')}>
+		<header class="flex gap-4">
+			<img class="w-7 h-7 group-hover:scale-150 transition-all duration-300" alt="gamelinksafe logo" src="/gamelinksafe-icon.jpg"/>
+				<h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
+					{$_('gamelinksafe-title')}
+				</h5>
+		</header>
+
+		<p class="mb-3 font-normal text-gray-900">
+			{$_('gamelinksafe-description')}
+		</p>
+		<div
+			class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-orange-600 rounded-lg hover:bg-orange-500 focus:ring-orange-700 focus:ring-4 focus:outline-none"
+		>
+			{$_('gamelinksafe-call-to-action')}
+			<svg
+				class="rtl:rotate-180 w-3.5 h-3.5 ms-2"
+				aria-hidden="true"
+				xmlns="http://www.w3.org/2000/svg"
+				fill="none"
+				viewBox="0 0 14 10"
+			>
+				<path
+					stroke="currentColor"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					stroke-width="2"
+					d="M1 5h12m0 0L9 1m4 4L9 9"
+				/>
+			</svg>
+		</div>
+	</a>
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
 	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">{$_('how-to-use')}</h3>
@@ -191,17 +225,14 @@
 >
 	<div class="md:w-2/4 h-full">
 		<h3 class="text-6xl font-black leading-[1.1] text-center capitalize xl:text-left">
-			OS Support
+			{$_('os-support')}
 		</h3>
 
+		<p class="mt-8 text-xl">{@html $_('os-support-description')}</p>
 		<p class="mt-8 text-xl">
-			We got you covered! Remote Controller supports <strong>Windows</strong>, and Linux (Soon).
-		</p>
-		<p class="mt-8 text-xl">
-			Also we have a browser client for those who don't want to install anything, it works in almost
-			every browser.
+			{$_('os-support-browser')}
 			<br />
-			<a class="link link-secondary" href="/client">Try our web client </a>
+			<a class="link link-secondary" href="/client">{$_('os-support-browser-link-text')} </a>
 		</p>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6 items-end">
@@ -237,11 +268,11 @@
 				<div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-neutral rounded-xl">
 					<aside class="p-8 space-y-4 md:p-16">
 						<h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
-							It’s <strong>free forever</strong>.
+							{@html $_('card-title')}
 						</h2>
 
 						<p class="font-medium text-blue-100 md:text-2xl">
-							No account, no credit card required.
+							{$_('card-description')}
 						</p>
 
 						<div>
@@ -249,7 +280,7 @@
 								href="/download"
 								class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl"
 							>
-								Free Download
+								{$_('card-link-download')}
 							</a>
 						</div>
 					</aside>
