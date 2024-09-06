@@ -43,5 +43,16 @@
     "share-your-video-and-audio": "Share your video & audio",
     "free-and-open-source-content": "Remote Controller is free and open source. You can <strong>check out the source code</strong> on GitHub.",
     "share-your-video-and-audio-content": "You can enjoy your games with <strong>high quality video and audio streaming</strong>"
-  }
+  },
+  "os-support": "OS Support",
+  "os-support-description": "We got you covered! RemoteController supports <strong>Windows</strong>, and Linux (Soon).",
+  "os-support-browser": "Also we have a browser client for those who don't want to install anything, it works in almost every browser.",
+  "os-support-browser-link-text": "Try our web client",
+  "card-title": "It’s <strong>free forever</strong>.",
+  "card-description": "No account, no credit card required.",
+  "card-link-download": "Free Download",
+  "gamelinksafe-title": "Discover GameLinkSafe",
+  "gamelinksafe-description": "Safely Connect Your LAN Games. The ultimate solution for gamers who want to play together. ",
+  "gamelinksafe-url": "https://gamelinksafe.org/",
+  "gamelinksafe-call-to-action": "It is free"
 }

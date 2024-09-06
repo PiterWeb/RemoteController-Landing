@@ -41,5 +41,17 @@
     "share-your-video-and-audio": "Делитесь своими видео и аудио",
     "free-and-open-source-content": "Remote Controller бесплатен и имеет открытый исходный код. \nВы можете <strong>ознакомиться с исходным кодом</strong> на GitHub.",
     "share-your-video-and-audio-content": "Вы можете наслаждаться играми благодаря <strong>потоковое видео и аудио высокого качества</strong>"
-  }
+  },
+  "os-support": "Поддержка ОС",
+  "remote-controller-is-a-free-and-open-source-app-that-lets-you-play-local-co-op-games-online-with-your-friends-without-having-to-use-steam-or-any-other-proprietary-gaming-online-services-it-just-works-its-like-youre-both-playing-on-the-same-computer": "Remote Controller – это бесплатное приложение с <strong>открытым исходным кодом</strong>, которое позволяет вам играть в локальные совместные онлайн-игры с друзьями без необходимости использовать Steam или какие-либо другие проприетарные игровые онлайн-сервисы. \n<strong>Это просто работает</strong>, вы оба играете на одном компьютере!",
+  "os-support-description": "Мы вас прикрыли! \nRemoteController поддерживает <strong>Windows</strong> и Linux (скоро).",
+  "os-support-browser": "Также у нас есть браузерный клиент для тех, кто не хочет ничего устанавливать, он работает практически в каждом браузере.",
+  "os-support-browser-link-text": "Попробуйте наш веб-клиент",
+  "card-title": "Это <strong>бесплатно навсегда</strong>.",
+  "card-description": "Никакой учетной записи, никакой кредитной карты не требуется.",
+  "card-link-download": "Бесплатная загрузка",
+  "gamelinksafe-url": "https://gamelinksafe.org/ru",
+  "gamelinksafe-title": "Откройте для себя GameLinkSafe",
+  "gamelinksafe-description": "Безопасное подключение игр по локальной сети. \nИдеальное решение для геймеров, которые хотят играть вместе.",
+  "gamelinksafe-call-to-action": "Это бесплатно"
 }
