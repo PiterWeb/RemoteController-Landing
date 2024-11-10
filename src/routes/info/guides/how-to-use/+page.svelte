@@ -29,6 +29,8 @@
 					: If you are going to host the game you will use the Host option in the main menu.
 				</p>
 
+				<a class="link link-primary" href="https://youtu.be/L7LKypcls7c">Video Example of how to use the sotware</a>
+
 				<div class="grid grid-cols-1 md:grid-cols-2 w-full">
 					<div>
 						<h3 class="m-6 font-bold">Client Instructions</h3>

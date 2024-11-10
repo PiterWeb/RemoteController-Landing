@@ -23,6 +23,11 @@
 			title: 'Security',
 			description: 'Learn how Remote Controller protects your data',
 			link: '/info/resources/security'
+		},
+		{
+			title: 'Download',
+			description: "Download RemoteController for your favourite platform",
+			link: "/download"
 		}
 	];
 </script>

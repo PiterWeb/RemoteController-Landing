@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@justinribeiro/lite-youtube": "^1.5.0",
 		"flag-icons": "^7.1.0",
 		"svelte-i18n": "^4.0.0"
 	}

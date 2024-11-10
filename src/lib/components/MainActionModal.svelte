@@ -36,10 +36,13 @@
 
 				<div>
 					<h4 class="text-lg font-bold">Supported Platforms</h4>
-					<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6 w-full">
-						<Card title="Windows" />
-						<Card title="Linux (Soon)" />
-						<Card title="Browser" />
+					<div class="grid grid-cols-1 lg:grid-cols-2 md:gap-2 gap-4 my-6 w-full">
+						<a href="/download">
+							<Card title="Windows" />
+						</a>
+						<a href="/download">
+							<Card title="Linux (Soon)" />
+						</a>
 					</div>
 				</div>
 

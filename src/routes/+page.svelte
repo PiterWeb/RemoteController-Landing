@@ -9,6 +9,11 @@
 	import MainModal from '$lib/components/MainActionModal.svelte';
 
 	import { _ } from 'svelte-i18n';
+	import { onMount } from 'svelte';
+
+	onMount(() => {
+		import('@justinribeiro/lite-youtube');
+	});
 
 	function openMainDialog() {
 		const dialog = document.getElementById('main-dialog') as HTMLDialogElement;
@@ -111,12 +116,19 @@
 	</div>
 </section>
 <section class="grid justify-center py-12">
-	<a class="group md:w-[32rem] w-2/3 mx-auto p-6 rounded-lg shadow bg-white border-orange-600 border-2" href={$_('gamelinksafe-url')}>
+	<a
+		class="group md:w-[32rem] w-2/3 mx-auto p-6 rounded-lg shadow bg-white border-orange-600 border-2"
+		href={$_('gamelinksafe-url')}
+	>
 		<header class="flex gap-4">
-			<img class="w-7 h-7 group-hover:scale-150 transition-all duration-300" alt="gamelinksafe logo" src="/gamelinksafe-icon.jpg"/>
-				<h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
-					{$_('gamelinksafe-title')}
-				</h5>
+			<img
+				class="w-7 h-7 group-hover:scale-150 transition-all duration-300"
+				alt="gamelinksafe logo"
+				src="/gamelinksafe-icon.jpg"
+			/>
+			<h5 class="mb-2 text-2xl font-bold tracking-tight text-black">
+				{$_('gamelinksafe-title')}
+			</h5>
 		</header>
 
 		<p class="mb-3 font-normal text-gray-900">
@@ -146,27 +158,12 @@
 </section>
 <section class="mt-24 mb-24 bg-neutral w-full py-12 text-white">
 	<h3 class="text-4xl font-black text-center leading-[1.1] capitalize">{$_('how-to-use')}</h3>
-	<div
-		class="flex flex-col md:flex-row md:justify-center md:items-center gap-8 mt-24 mb-24 md:mx-auto md:3/4 w-11/12"
-	>
-		<div class="flex flex-col items-center gap-4">
-			<p class="text-2xl">Connect your gamepad</p>
-			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
-				<li class="step step-info">Download APP</li>
-				<li data-content="1" class="step step-info">Use Browser Client</li>
-				<li data-content="2" class="step step-primary">Share Codes</li>
-				<li data-content="3" class="step step-primary">Play</li>
-			</ul>
-		</div>
-		<div class="flex flex-col items-center gap-4">
-			<p class="text-2xl">Stream your videogame</p>
-			<ul class="steps steps-vertical md:steps-horizontal font-bold mx-auto gap-4">
-				<li class="step step-primary">Install Drivers</li>
-				<li class="step step-primary">Download APP</li>
-				<li class="step step-primary">Share Codes</li>
-				<li class="step step-primary">Play</li>
-			</ul>
-		</div>
+	<div class="w-1/2 m-auto mt-4">
+		<lite-youtube videoid="L7LKypcls7c">
+			<a class="lite-youtube-fallback" href="https://www.youtube.com/watch?v=guJLfqTFfIw"
+				>Watch on YouTube: "Sample output of devtools-to-video cli tool"</a
+			>
+		</lite-youtube>
 	</div>
 </section>
 
@@ -236,9 +233,15 @@
 		</p>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6 items-end">
-			<Card title="Windows" />
-			<Card title="Browser" />
-			<Card title="Linux (Soon)" />
+			<a href="/download">
+				<Card title="Windows" />
+			</a>
+			<a href="/client">
+				<Card title="Browser" />
+			</a>
+			<a href="/download">
+				<Card title="Linux (Soon)" />
+			</a>
 		</div>
 	</div>
 
@@ -265,34 +268,35 @@
 	<div class="my-auto mx-auto reveal-fade">
 		<div class="w-full max-w-6xl mx-auto px-4 sm:px-6 md:px-8 relative">
 			<div class="shadow rounded-xl">
-				<div class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-neutral rounded-xl">
-					<aside class="p-8 space-y-4 md:p-16">
-						<h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
-							{@html $_('card-title')}
-						</h2>
+				<a href="/download">
+					<div
+						class="grid overflow-hidden text-white shadow-xl md:grid-cols-2 bg-neutral rounded-xl group"
+					>
+						<aside class="p-8 space-y-4 md:p-16">
+							<h2 class="text-2xl font-bold tracking-tight md:text-4xl font-headline">
+								{@html $_('card-title')}
+							</h2>
 
-						<p class="font-medium text-blue-100 md:text-2xl">
-							{$_('card-description')}
-						</p>
+							<p class="font-medium text-blue-100 md:text-2xl">
+								{$_('card-description')}
+							</p>
 
-						<div>
-							<a
-								href="/download"
-								class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl"
+							<div
+								class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl w-fit group-hover:scale-110 transition-all"
 							>
 								{$_('card-link-download')}
-							</a>
-						</div>
-					</aside>
+							</div>
+						</aside>
 
-					<aside class="relative hidden md:block">
-						<img
-							class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
-							src="/showcase.jpg"
-							alt="Discover our beautiful panel"
-						/>
-					</aside>
-				</div>
+						<aside class="relative hidden md:block">
+							<img
+								class="absolute inset-0 object-cover object-left-top w-full h-full mt-16 -mr-16 rounded-tl-lg"
+								src="/showcase.jpg"
+								alt="Discover our beautiful panel"
+							/>
+						</aside>
+					</div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -314,4 +318,5 @@
 	#btn-play {
 		animation-delay: 0.25s;
 	}
+
 </style>
