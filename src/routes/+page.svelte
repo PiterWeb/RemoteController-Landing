@@ -3,6 +3,7 @@
 	import DownloadSVG from '$lib/assets/download.svg?raw';
 	import GuideSVG from '$lib/assets/guide.svg?raw';
 	import Star from '$lib/assets/star.svelte';
+	import Gamepad from '$lib/assets/gamepad.svelte';
 
 	import Card from '$lib/components/Card.svelte';
 	import TextBlock from '$lib/components/TextBlock.svelte';
@@ -73,7 +74,7 @@
 	</section>
 
 	<section class="p-4 -z-10">
-		<img src="/gamepad-aqua.webp" alt="gamepad" class="m-auto w-full -rotate-12" />
+		<Gamepad className="w-full m-auto stroke-neutral motion-safe:animate-bounce"/>
 	</section>
 </div>
 <ArrowAction targetId="about-remote-controller" />
@@ -282,7 +283,7 @@
 							</p>
 
 							<div
-								class="bg-white font-semibold text-neutral-600 px-4 py-2 mt-3 rounded-xl w-fit group-hover:scale-110 transition-all"
+								class="btn btn-warning w-fit group-hover:scale-110 transition-all"
 							>
 								{$_('card-link-download')}
 							</div>

@@ -66,7 +66,7 @@
 		rel="noopener noreferrer"
 		aria-label={$_('layout.support-us-with-ko-fi-donations')}
 	>
-		<span class="indicator-item badge badge-info rounded-full" />
+		<span class="indicator-item badge badge-warning rounded-full" />
 
 		<span class="md:block hidden">{$_('layout.support_us')}</span>
 		{@html SupportSVG}
