@@ -11,6 +11,7 @@
 
 	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
+	import Opinions from '$lib/components/Opinions.svelte';
 
 	onMount(() => {
 		import('@justinribeiro/lite-youtube');
@@ -46,7 +47,7 @@
 					LOCAL</span
 				>
 
-				co-op games
+				<span class="whitespace-nowrap">co-op</span> games
 				<span
 					class="[&amp;::selection]:text-base-content text-transparent relative col-start-1 row-start-1 bg-clip-text bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900"
 				>
@@ -71,6 +72,7 @@
 				>
 			</div>
 		</div>
+		<Opinions/>
 	</section>
 
 	<section class="p-4 -z-10">
