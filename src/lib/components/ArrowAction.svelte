@@ -2,7 +2,7 @@
 	export let targetId: string;
 </script>
 
-<a href={`#${targetId}`} aria-label={`Scroll to the main content of the page with id ${targetId}`}>
+<a class="md:block hidden" href={`#${targetId}`} aria-label={`Scroll to the main content of the page with id ${targetId}`}>
 	<svg class="arrows mx-auto block md:-mt-20 -mt-56">
 		<path class="a1" d="M0 0 L30 32 L60 0" />
 		<path class="a2" d="M0 20 L30 52 L60 20" />
