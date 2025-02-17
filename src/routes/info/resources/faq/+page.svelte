@@ -49,8 +49,7 @@
             <li>
                 <h2 class="font-bold text-xl">Is it safe?</h2>
                 <p>
-                    Theoricaly yes, but it depends on the network you are using. If you are using a public network it is possible that someone can intercept the data and see what you are doing. If you are using a private network it is very unlikely that someone can intercept the data.
-                    But if you want to know more about this you can check the <a class="link" href="/info/resources/security">security guide</a>.
+                    Theoricaly yes, but if you want to know more about this you can check the <a class="link" href="/info/resources/security">security guide</a>.
             </li>
             <li>
                 <h2 class="font-bold text-xl">I need an acount?</h2>
