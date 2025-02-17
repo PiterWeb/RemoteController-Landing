@@ -5,10 +5,10 @@
 <InfoTemplate title="Security" description="Things to be awere of when using the software concerning your security">
 
     <p class="px-6 text-lg">
-        Quoting WebRTC-for-the-curious
+        Quoting <a href="https://webrtcforthecurious.com/docs/04-securing/#what-security-does-webrtc-have" class="link link-primary">WebRTC-for-the-curious</a> 
     </p>
 
-    <blockquote class="p-6 text-left" cite="https://webrtcforthecurious.com/es/docs/04-securing/#what-security-does-webrtc-have">
+    <blockquote class="p-6 text-left" cite="https://webrtcforthecurious.com/docs/04-securing/#what-security-does-webrtc-have">
         "Every WebRTC connection is authenticated and encrypted. You can be confident
         that a 3rd party can’t see what you are sending or insert bogus messages. You
         can also be sure that the WebRTC Agent that generated the Session Description

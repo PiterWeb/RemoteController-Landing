@@ -26,7 +26,7 @@
 				<h2 class="font-bold text-xl">Is it free?</h2>
 				<p>
 					Yes, Remote Controller is free and open source. You can check the source code on <a
-						class="link"
+						class="link link-primary"
 						href="https://github.com/PiterWeb/RemoteController">Github</a
 					>.
 				</p>
@@ -49,7 +49,7 @@
             <li>
                 <h2 class="font-bold text-xl">Is it safe?</h2>
                 <p>
-                    Theoricaly yes, but if you want to know more about this you can check the <a class="link" href="/info/resources/security">security guide</a>.
+                    Theoricaly yes, but if you want to know more about this you can check the <a class="link link-primary" href="/info/resources/security">security guide</a>.
             </li>
             <li>
                 <h2 class="font-bold text-xl">I need an acount?</h2>

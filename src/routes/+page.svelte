@@ -37,6 +37,8 @@
 <div
 	class="md:grid md:grid-cols-3 md:grid-rows-1 md:items-center md:h-[calc(100vh-3rem-4rem-1rem)] lg:w-2/3 md:mx-auto md:px-0 md:gap-4 px-6 mt-12 w-full flex flex-col h-[calc(100vh-3rem)]"
 >
+	
+
 	<section class="md:max-w-[65ch] md:ml-24 flex flex-col justify-evenly col-span-2">
 		<div>
 			<h1 class="text-center text-[clamp(2rem,6vw,4.2rem)] font-black leading-[1.1] xl:text-left">
@@ -59,6 +61,7 @@
 			</h2>
 		</div>
 
+
 		<div class="flex flex-col gap-4">
 			<div class="w-full" id="btn-explore">
 				<a href="/info" class="btn btn-lg w-full"
@@ -73,7 +76,10 @@
 			</div>
 		</div>
 		<Opinions/>
+		
 	</section>
+
+
 
 	<section class="p-4 -z-10">
 		<Gamepad className="w-full m-auto stroke-neutral motion-safe:animate-bounce"/>
@@ -232,7 +238,7 @@
 		<p class="mt-8 text-xl">
 			{$_('os-support-browser')}
 			<br />
-			<a class="link link-secondary" href="/client">{$_('os-support-browser-link-text')} </a>
+			<a class="link link-primary" href="/client">{$_('os-support-browser-link-text')} </a>
 		</p>
 
 		<div class="grid grid-cols-1 lg:grid-cols-3 md:gap-2 gap-4 my-6 items-end">

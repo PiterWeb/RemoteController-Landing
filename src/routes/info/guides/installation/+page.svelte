@@ -12,7 +12,7 @@
 		</p>
 
 
-		<a class="link" href="/download">
+		<a class="link link-primary" href="/download">
 			Download the latest Remote Controller executable</a
 		>
 
@@ -41,7 +41,7 @@
 		<h2 class="font-bold text-2xl">Browser</h2>
 		<p>
 			In case you want to use the browser version of Remote Controller you can do it by going to
-			<a class="link" href="/client">remote-controller-client.vercel.app</a>.
+			<a class="link link-primary" href="/client">remote-controller-client.vercel.app</a>.
 		</p>
 	</section>
 </InfoTemplate>
