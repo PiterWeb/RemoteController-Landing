@@ -22,7 +22,7 @@
 		{
 			title: 'Linux',
 			description: 'Download the latest version of LibreRemotePlay for Linux.',
-			link: ''
+			link: 'https://github.com/PiterWeb/LibreRemotePlay/releases/latest/download/RemoteController-linux-amd64'
 		},
 		{
 			title: 'Source Code',
