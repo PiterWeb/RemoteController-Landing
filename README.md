@@ -1,3 +1,3 @@
-# Remote Controller Landing
+# LibreRemotePlay Landing
 
-You can check out the project [here](https://github.com/PiterWeb/RemoteController)
+You can check out the project [here](https://github.com/PiterWeb/LibreRemotePlay).

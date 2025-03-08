@@ -11,7 +11,7 @@
 	const cards: Card[] = [
 		{
 			title: 'Guides',
-			description: 'Learn how to install & use Remote Controller',
+			description: 'Learn how to install & use LibreRemotePlay',
 			link: '/info/guides'
 		},
 		{
@@ -21,12 +21,12 @@
 		},
 		{
 			title: 'Security',
-			description: 'Learn how Remote Controller protects your data',
+			description: 'Learn how LibreRemotePlay protects your data',
 			link: '/info/resources/security'
 		},
 		{
 			title: 'Download',
-			description: "Download RemoteController for your favourite platform",
+			description: "Download LibreRemotePlay for your favourite platform",
 			link: "/download"
 		}
 	];
@@ -34,7 +34,7 @@
 
 <InfoTemplate
 	title="Overview"
-	description="Here you can learn more about RemoteController and access guides of use"
+	description="Here you can learn more about LibreRemotePlay and access guides of use"
 >
 	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my-11">
 		{#each cards as { title, description, link }}

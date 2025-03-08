@@ -4,9 +4,9 @@
 </script>
 
 <svelte:head>
-	<title>📖 {title} - Remote Controller</title>
+	<title>📖 {title} - LibreRemotePlay</title>
 	<meta name="description" content={description} />
-	<meta property="og:title" content={`📖 ${title} - Remote Controller`} />
+	<meta property="og:title" content={`📖 ${title} - LibreRemotePlay`} />
 	<meta property="og:description" content={description} />
 </svelte:head>
 

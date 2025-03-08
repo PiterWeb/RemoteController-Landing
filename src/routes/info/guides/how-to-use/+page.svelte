@@ -2,10 +2,10 @@
 	import InfoTemplate from '$lib/components/InfoTemplate.svelte';
 </script>
 
-<InfoTemplate title="How to use" description="Learn how to use Remote Controller">
+<InfoTemplate title="How to use" description="Learn how to use LibreRemotePlay">
 	<div class="p-6">
 		<p>
-			Remote Controller is easy to use. Just follow the next steps and you will be ready to play
+			LibreRemotePlay is easy to use. Just follow the next steps and you will be ready to play
 			your favorite games with your friends.
 		</p>
 

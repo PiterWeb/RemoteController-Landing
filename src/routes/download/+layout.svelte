@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Remote Controller 🕹 Explore</title>
+	<title>LibreRemotePlay 🕹 Explore</title>
 </svelte:head>
 
 <div class="flex flex-col w-full mt-12">
@@ -8,7 +8,7 @@
 			Download
 		</h2>
 		<h3 class="text-2xl font-bold my-4">
-			Get the latest version of Remote Controller for your platform.
+			Get the latest version of LibreRemotePlay for your platform.
 		</h3>
 	</section>
 

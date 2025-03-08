@@ -24,14 +24,14 @@
 </script>
 
 <svelte:head>
-	<title>Remote Controller 🕹 {$_('head.title-secondary')}</title>
+	<title>LibreRemotePlay 🕹 {$_('head.title-secondary')}</title>
 	<meta name="description" content={$_('head.description')} />
 	<meta property="og:title" content={'🕹' + $_('head.title-secondary')} />
-	<meta property="og:site_name" content="Remote Controller" />
-	<meta property="og:url" content="https://remote-controller.vercel.app" />
+	<meta property="og:site_name" content="LibreRemotePlay" />
+	<meta property="og:url" content="https://libreremoteplay.vercel.app/" />
 	<meta property="og:description" content={$_('head.description')} />
 	<meta property="og:type" content="product" />
-	<meta property="og:image" content="https://remote-controller.vercel.app/gamepad-aqua.webp" />
+	<meta property="og:image" content="https://libreremoteplay.vercel.app/gamepad-aqua.webp" />
 </svelte:head>
 
 <div
@@ -105,17 +105,17 @@
 			<a
 				href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
 				target="_blank"
-				aria-label="View Remote Controller hub on Product Hunt"
+				aria-label="View LibreRemotePlay hub on Product Hunt"
 				><img
 					src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=431468&theme=dark"
-					alt="Remote&#0032;Controller - Play&#0032;LOCAL&#0032;co&#0045;op&#0032;games&#0032;ONLINE | Product Hunt"
+					alt="LibreRemotePlay - Play&#0032;LOCAL&#0032;co&#0045;op&#0032;games&#0032;ONLINE | Product Hunt"
 					style="width: 250px; height: 54px;"
 					width="250"
 					height="54"
 				/></a
 			>
 			<a
-				href="https://github.com/PiterWeb/RemoteController"
+				href="https://github.com/PiterWeb/LibreRemotePlay"
 				aria-label={$_('star-us-on-github')}
 				class="group flex flex-row items-center gap-4 font-semibold w-64 h-14 border-gray-400 border-2 rounded-lg p-4"
 			>
@@ -249,7 +249,7 @@
 				<Card title="Browser" />
 			</a>
 			<a href="/download">
-				<Card title="Linux (Soon)" />
+				<Card title="Linux" />
 			</a>
 		</div>
 	</div>

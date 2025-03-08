@@ -1,8 +1,8 @@
 <svelte:head>
-	<meta property="og:site_name" content="Remote Controller" />
-	<meta property="og:url" content="https://remote-controller.vercel.app" />
+	<meta property="og:site_name" content="LibreRemotePlay" />
+	<meta property="og:url" content="https://libreremoteplay.vercel.app/" />
 	<meta property="og:type" content="product" />
-	<meta property="og:image" content="https://remote-controller.vercel.app/gamepad-aqua.webp" />
+	<meta property="og:image" content="https://libreremoteplay.vercel.app/gamepad-aqua.webp" />
 </svelte:head>
 
 <div class="flex flex-col w-full mt-12 min-h-[60vh]">
@@ -25,7 +25,7 @@
 			<li class="menu-title">Resources</li>
 			<li><a href="/info/resources/faq">FAQ</a></li>
 			<li><a href="/info/resources/security">Security</a></li>
-			<li><a href="https://github.com/PiterWeb/RemoteController/tree/main/docs">Dev Docs</a></li>
+			<li><a href="https://github.com/PiterWeb/LibreRemotePlay/tree/main/docs">Dev Docs</a></li>
 		</ul>
 
 		<article class="md:col-span-5">

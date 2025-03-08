@@ -2,13 +2,13 @@
 	import InfoTemplate from '$lib/components/InfoTemplate.svelte';
 </script>
 
-<InfoTemplate title="FAQ" description="Things you may want to know about Remote Controller">
+<InfoTemplate title="FAQ" description="Things you may want to know about LibreRemotePlay">
 	<div class="p-6">
 		<ul class="[&>li]:mb-6">
 			<li>
-				<h2 class="font-bold text-xl">What is Remote Controller?</h2>
+				<h2 class="font-bold text-xl">What is LibreRemotePlay?</h2>
 				<p>
-					Remote Controller is a software that allows you to play pc videogames from other
+					LibreRemotePlay is a software that allows you to play pc videogames from other
 					dispositives (Browsers, Windows). It is purpose is to allow you to play your favorite
 					games with other people without having to be in the same room or using it like a gaming
 					cloud service.
@@ -17,7 +17,7 @@
 			<li>
 				<h2 class="font-bold text-xl">How does it work?</h2>
 				<p>
-					Remote Controller uses a technology called WebRTC to stream the video and audio from your
+					LibreRemotePlay uses a technology called WebRTC to stream the video and audio from your
 					computer to the browser and also the gamepad input. It also uses ViGEm to emulate a
 					gamepad on your computer if you are on Windows.
 				</p>
@@ -25,9 +25,9 @@
 			<li>
 				<h2 class="font-bold text-xl">Is it free?</h2>
 				<p>
-					Yes, Remote Controller is free and open source. You can check the source code on <a
+					Yes, LibreRemotePlay is free and open source. You can check the source code on <a
 						class="link link-primary"
-						href="https://github.com/PiterWeb/RemoteController">Github</a
+						href="https://github.com/PiterWeb/LibreRemotePlay">Github</a
 					>.
 				</p>
 			</li>
@@ -41,7 +41,7 @@
 			<li>
 				<h2 class="font-bold text-xl">It depends on any critical external service?</h2>
 				<p>
-					No, Remote Controller doesn't depend on any critical external service. It only depends on
+					No, LibreRemotePlay doesn't depend on any critical external service. It only depends on
 					a series of IP Discovery servers (STUN) that can be replaced on the config to create a peer to peer connection between
 					devices.
 				</p>
@@ -54,7 +54,7 @@
             <li>
                 <h2 class="font-bold text-xl">I need an acount?</h2>
                 <p>
-                    No, you don't need an account to use Remote Controller. We desing the software to be as simple as possible and not to relay on external services that can be a problem in the future.
+                    No, you don't need an account to use LibreRemotePlay. We desing the software to be as simple as possible and not to relay on external services that can be a problem in the future.
                     The only thing you need to do is to download the desktop app or go to the browser version and you are ready to use it.
                     The bad part of this is that you have to pass the connection codes to the other person manually.
                 </p>

@@ -31,7 +31,7 @@
 				<div class="flex flex-col gap-4">
 					<h3 class="text-4xl font-black leading-[1.1] text-center capitalize">Download APP</h3>
 
-					<p>Download the latest version of Remote Controller for your platform.</p>
+					<p>Download the latest version of LibreRemotePlay for your platform.</p>
 				</div>
 
 				<div>
@@ -41,7 +41,7 @@
 							<Card title="Windows" />
 						</a>
 						<a href="/download">
-							<Card title="Linux (Soon)" />
+							<Card title="Linux" />
 						</a>
 					</div>
 				</div>

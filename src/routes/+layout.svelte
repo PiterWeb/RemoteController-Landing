@@ -31,11 +31,11 @@
 			<a
 				href="/"
 				class="btn btn-ghost normal-case text-xl items-start content-center"
-				aria-label="Go to home page of Remote Controller website"
+				aria-label="Go to home page of LibreRemotePlay website"
 			>
 				{@html GamepadSVG}
 
-				<span class="hidden md:block">Remote Controller</span>
+				<span class="hidden md:block">LibreRemotePlay</span>
 			</a>
 		</h2>
 	</div>
