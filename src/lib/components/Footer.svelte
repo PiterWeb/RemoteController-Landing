@@ -1,5 +1,6 @@
 <script>
 	import GamepadSVG from '$lib/assets/gamepad.svg?raw';
+	import { discordUrl, githubUrl, wikiUrl } from '$lib/constants';
 </script>
 
 <footer id="footer" class="footer p-10 bg-neutral text-neutral-content mt-20">
@@ -10,24 +11,24 @@
 	</aside>
 	<nav>
 		<header class="footer-title">Product</header>
-		<a href="https://github.com/PiterWeb/LibreRemotePlay/releases" class="link link-hover"
+		<a href={`${githubUrl}/releases`} class="link link-hover"
 			>Downloads</a
 		>
-		<a href="/info/guides/installation" class="link link-hover">Guides</a>
-		<a href="/info/resources/faq" class="link link-hover">FAQ</a>
+		<a href={wikiUrl}>Wiki</a>
 	</nav>
 	<nav>
 		<header class="footer-title">Social</header>
-		<a href="https://github.com/PiterWeb/LibreRemotePlayr" class="link link-hover">Github</a>
+		<a href={githubUrl} class="link link-hover">Github</a>
+		<a href={discordUrl} class="link link-hover">Discord</a>
 		<a href="mailto:piterzdev@gmail.com" class="link link-hover">Contact</a>
 	</nav>
 	<nav>
 		<header class="footer-title">Development</header>
 		<a
-			href="https://github.com/PiterWeb/LibreRemotePlay/blob/main/CONTRIBUTING.md"
+			href={`${githubUrl}/blob/main/CONTRIBUTING.md`}
 			class="link link-hover">Contribute</a
 		>
-		<a href="https://github.com/PiterWeb/LibreRemotePlay/tree/main/docs" class="link link-hover"
+		<a href={`${githubUrl}/tree/main/docs`} class="link link-hover"
 			>Docs</a
 		>
 	</nav>

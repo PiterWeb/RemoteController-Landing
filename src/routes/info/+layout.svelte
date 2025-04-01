@@ -1,3 +1,8 @@
+<script>
+
+	import { githubUrl } from "$lib/constants";
+
+</script>
 <svelte:head>
 	<meta property="og:site_name" content="LibreRemotePlay" />
 	<meta property="og:url" content="https://libreremoteplay.vercel.app/" />
@@ -25,7 +30,7 @@
 			<li class="menu-title">Resources</li>
 			<li><a href="/info/resources/faq">FAQ</a></li>
 			<li><a href="/info/resources/security">Security</a></li>
-			<li><a href="https://github.com/PiterWeb/LibreRemotePlay/tree/main/docs">Dev Docs</a></li>
+			<li><a href={`${githubUrl}/tree/main/docs`}>Dev Docs</a></li>
 		</ul>
 
 		<article class="md:col-span-5">

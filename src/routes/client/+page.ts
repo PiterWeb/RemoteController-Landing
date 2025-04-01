@@ -1,5 +1,6 @@
+import { clientUrl } from "$lib/constants";
 import { redirect } from "@sveltejs/kit";
 
 export function load() {
-    redirect(308,"https://libreremoteplay-client.vercel.app/");
+    redirect(301, clientUrl);
 }

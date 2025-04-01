@@ -12,6 +12,8 @@
 	import { _ } from 'svelte-i18n';
 	import { onMount } from 'svelte';
 	import Opinions from '$lib/components/Opinions.svelte';
+	import { downloadUrl, githubUrl } from '$lib/constants';
+	import DiscordButton from '$lib/components/DiscordBtn.svelte';
 
 	onMount(() => {
 		import('@justinribeiro/lite-youtube');
@@ -90,37 +92,27 @@
 	id="about-remote-controller"
 	class="grid md:grid-cols-3 justify-items-center gap-y-16 gap-x-10 pb-24 pt-28 mx-auto w-3/4 reveal-scale"
 >
-	<TextBlock
+
+	<Card expand
 		title={$_('what-is-remote-controller')}
-		content={$_('what-is-remote-controller-content')}
+		description={$_('what-is-remote-controller-content')}
 	/>
+	<Card expand title={$_('how-does-it-work')} description={$_('how-does-it-work-content')} />
 
-	<TextBlock title={$_('how-does-it-work')} content={$_('how-does-it-work-content')} />
-
-	<TextBlock title={$_('how-do-i-get-started')} content={$_('how-do-i-get-started-content')} />
+	<Card expand title={$_('how-do-i-get-started')} description={$_('how-do-i-get-started-content')} />
+	
 </section>
 <section>
 	<div>
 		<div class="flex-col md:flex-row flex justify-center items-center gap-8">
 			<a
-				href="https://www.producthunt.com/posts/remote-controller?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-remote&#0045;controller"
-				target="_blank"
-				aria-label="View LibreRemotePlay hub on Product Hunt"
-				><img
-					src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=431468&theme=dark"
-					alt="LibreRemotePlay - Play&#0032;LOCAL&#0032;co&#0045;op&#0032;games&#0032;ONLINE | Product Hunt"
-					style="width: 250px; height: 54px;"
-					width="250"
-					height="54"
-				/></a
-			>
-			<a
-				href="https://github.com/PiterWeb/LibreRemotePlay"
+				href={`${githubUrl}`}
 				aria-label={$_('star-us-on-github')}
-				class="group flex flex-row items-center gap-4 font-semibold w-64 h-14 border-gray-400 border-2 rounded-lg p-4"
+				class="group flex flex-row items-center gap-4 font-semibold w-fit h-14 border-gray-400 border-2 rounded-lg p-4"
 			>
 				<Star /> {$_('star-us-on-github')}</a
 			>
+			<DiscordButton/>
 		</div>
 	</div>
 </section>
@@ -245,11 +237,11 @@
 			<a href="/download">
 				<Card title="Windows" />
 			</a>
-			<a href="/client">
-				<Card title="Browser" />
-			</a>
 			<a href="/download">
 				<Card title="Linux" />
+			</a>
+			<a href="/client">
+				<Card title="Browser" />
 			</a>
 		</div>
 	</div>
@@ -291,7 +283,7 @@
 							</p>
 
 							<div
-								class="btn btn-warning w-fit group-hover:scale-110 transition-all"
+								class="btn btn-primary w-fit group-hover:scale-110 transition-all"
 							>
 								{$_('card-link-download')}
 							</div>
